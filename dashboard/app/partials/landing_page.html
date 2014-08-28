@@ -1,0 +1,94 @@
+<div class="jumbotron" style="height: 660px">
+<p>above-the-fold marketing graphic with clickable link to sales</p>
+</div>
+
+<div class="jumbotron">
+<p class="text-center"><a href="#/#waabs">click me to buy products quickly</a></p>
+</div>
+
+<div class="jumbotron" id="waabs">
+<p class="text-center">Pick from our range of Waabs</p>
+<div class="row">
+<div class="col-xs-4" style="border:1px solid black">
+<h2 class="text-center">$8/mo</h2>
+<p class="text-center">1 CPU</p>
+<p class="text-center">512MB RAM</p>
+<p class="text-center">10GB Storage</p>
+</div>
+<div class="col-xs-4" style="border:1px solid black" >
+<h2 class="text-center">$19/mo</h2>
+<p class="text-center">2 CPU</p>
+<p class="text-center">1GB RAM</p>
+<p class="text-center">20GB SSD Storage</p>
+</div>
+<div class="col-xs-4" style="border:1px solid black" >
+
+<h2 class="text-center">$60/mo</h2>
+<p class="text-center">4 CPU</p>
+<p class="text-center">6GB RAM</p>
+<p class="text-center">60GB SSD Storage</p>
+</div>
+</div>
+
+<div class="row">
+<div class="col-xs-4">
+<a class="text-center" href="" onclick="customiseOrder(1)">Configure and Order</a>
+</div>
+<div class="col-xs-4">
+<a class="text-center" href="" onclick="customiseOrder(2)">Configure and Order</a>
+</div>
+<div class="col-xs-4">
+<a class="text-center" href="" onclick="customiseOrder(3)">Configure and Order</a>
+</div>
+</div>
+
+</div>
+</div>
+
+<div id="customise" class="jumbotron" style="">
+customise product
+<ul>
+<li>all customisible options listed</li>
+<li>OS choice</li>
+<li>hardware specs configuration</li>
+<li>software to install by default</li>
+<li>SSH keys</li>
+<li>backups and encryption</li>
+<li>generate API keys?</li>
+</ul>
+<a href="" onclick="finaliseOrder()">Finalise and Pay</a>
+</div>
+
+<div id="finalise" class="jumbotron" style="">
+finalise and pay
+<ul>
+<li>sign in with social login if not logged in</li>
+<li>show payment process after login successful</li>
+</ul>
+<ul>
+<li>POST /pay details of service</li>
+<li>validate correctness against local db of products</li>
+<li>create invoice in db - mark as unpaid</li>
+<li>open paypal in another window</li>
+<li>complete payment process</li>
+<li>callback url to main page - success params appended, controller deals with UI state, server creates transaction</li>
+</ul>
+
+</div>
+
+<div class="jumbotron">
+
+details of our services
+</div>
+
+<script>
+
+function customiseOrder(product) {
+ document.getElementById("customise").style.display = "block"; 
+}
+
+function finaliseOrder(product) {
+  document.getElementById("finalise").style.display = "block";
+}
+
+</script>

@@ -1,0 +1,13 @@
+<div class=package-tile>
+	<span class=heading>{{ content.packageName }}</span>
+        <img class=img height=150px width=150px src="{{ content.icon }}"/>
+	<span class=description>{{ content.description }}</span>
+        <div class=buttons>
+        <div class=button-group>
+		<a class=button href="">More Info</a>
+                <a class=button href="" ng-click="selectPackage()">{{ buttonState }}</a>
+        </div> 
+        </div>
+</div>
+
+<!-- button type="button" class="btn btn-default">Ubuntu 12.04 (64 bit)</button --> 

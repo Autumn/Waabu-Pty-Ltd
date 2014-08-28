@@ -1,0 +1,134 @@
+.os-config-tile {
+  background-color: rgb(246, 251, 254);
+}
+
+.os-config-header {
+  background-color: rgb(178, 194, 255)
+}
+
+.os-config-title {
+  font-size: 24px;
+padding: 15px;
+font-weight: bold;
+text-align: center;
+}
+
+.os-config-table {
+  margin: auto;
+}
+
+.os-config-table td {
+  padding: 5px;
+}
+
+.os-buttons .button {
+  margin-right: auto;
+  margin-left: auto;
+  display: inline-block;
+  width: 120px;
+  padding: 15px;
+  text-align: center;
+  transition: background-color 0.2s linear;
+}
+
+.os-buttons .button:hover {
+}
+
+.upgrade-tile {
+  background-color: rgb(246, 251, 254);
+}
+
+.upgrade-header {
+  background-color: rgb(178, 194, 255)
+}
+
+.upgrade-title {
+  font-size: 24px;
+padding: 15px;
+font-weight: bold;
+text-align: center;
+}
+
+.sshkey-tile {
+
+  background-color: rgb(246, 251, 254);
+}
+
+.sshkey-header {
+
+  background-color: rgb(178, 194, 255)
+}
+
+.sshkey-title {
+  font-size: 24px;
+padding: 15px;
+font-weight: bold;
+text-align: center;
+
+}
+
+.os-buttons {
+  display: block;
+}
+
+
+/*.selected,{
+background-color: #398BCE;
+color: #FFF;
+cursor: default;
+}*/
+
+.waab_os_selected {
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+-ms-border-radius: 4px;
+-o-border-radius: 4px;
+border-radius: 4px;
+display: -moz-inline-stack;
+display: inline-block;
+vertical-align: middle;
+zoom: 1;
+background-color: #398BCE;
+color: #666;
+padding: 10px 0;
+width: 150px;
+text-align: center;
+margin: 0 10px 20px;
+line-height: 24px;
+cursor: pointer;
+}
+
+.selectable, .waab_os_select {
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+-ms-border-radius: 4px;
+-o-border-radius: 4px;
+border-radius: 4px;
+display: -moz-inline-stack;
+display: inline-block;
+vertical-align: middle;
+zoom: 1;
+background-color: #EEE;
+color: #666;
+padding: 10px 0;
+width: 150px;
+text-align: center;
+margin: 0 10px 20px;
+line-height: 24px;
+cursor: pointer;
+}
+
+/*label:active
+{ 
+background-color: #398BCE;
+color: #FFF;
+cursor: default;
+}*/
+
+.coreupgrade-tile {
+ border-top: 2px solid #dbe8f3;
+ padding: 20px;
+ margin-bottom: 20px;
+ display: block;
+ text-align: center;
+}

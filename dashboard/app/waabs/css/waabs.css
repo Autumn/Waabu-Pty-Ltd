@@ -1,0 +1,30 @@
+/*Stylesheet for Dashboard - Waabs */
+
+table.waabs {
+font-size: 14px;
+width: 95%;
+}
+
+table {
+border-collapse: collapse;
+border-spacing: 0;
+color: #666;
+}
+
+table.waabs thead {
+color: #555;
+line-height: 54px;
+background-color: #F6F6F6;
+border-bottom: 1px solid #DDD;
+}
+
+thead {
+display: table-header-group;
+vertical-align: middle;
+border-color: inherit;
+}
+
+td, table.waabs th { 
+padding: 0 15px;
+text-align: center;
+}

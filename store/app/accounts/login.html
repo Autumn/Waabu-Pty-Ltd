@@ -1,0 +1,25 @@
+<form novalidate autocomplete="off" autofocus class="signup-form">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <span class=block-element><input class="input form-control" ng-model="email" type="email" placeholder="Email" /></span>
+      <span class=block-element><input class="input form-control" ng-model="password" type="password" placeholder="Password" /></span>
+      <div class=buttons>
+	<button style="border:none" type=submit class="login-button brand-blue-button" ng-click="login()" href=""><span>Login</span></button>
+      </div>
+      <span class="login-text">Not registered? <a href="" ng-click="register()">Create an account.</a></p>
+      <span class="login-text">Forgot your password? <a href="" ng-click="recoverPassword()">Click here.</a></p>
+    </div>
+  </div>
+</form>
+
+<div class="row text-center">
+  <div class="col-md-6 col-md-offset-3">
+    <div class="alert alert-danger tile-error" ng-show=timeout>Your session has expired. Please log in again.</div>
+    <div class="alert alert-danger tile-error" ng-show=detailsError>Please check your details and try again.</div>
+    <div class="alert alert-danger tile-error" ng-show=loginError>Login failed. Please check your details and try again.</div>
+    <div class="alert alert-success tile-success" ng-show=success>Logged in successfully.</div>
+    <div class="alert alert-success tile-success" ng-show=successcheckout>Logged in successfully. You'll be at checkout shortly.</div>
+    <div ng-show="failure" class="alert alert-danger tile-error">Login failed. Please check your details.</div>
+
+  </div>
+</div>

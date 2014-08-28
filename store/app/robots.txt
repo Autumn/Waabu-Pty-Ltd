@@ -1,0 +1,4 @@
+
+User-agent: *
+
+Sitemap: https://www.waabu.com/sitemap.xml

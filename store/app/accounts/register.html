@@ -1,0 +1,24 @@
+<form novalidate autocomplete="off" class="signup-form">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <span class=block-element><input class="input form-control" ng-model="email" type="email" placeholder="Email" /></span>
+      <span class=block-element><input class="input form-control" ng-model="password" type="password" placeholder="Password" /></span>
+      <div class=buttons>
+	<button style="border:none" type=submit class="login-button brand-blue-button" ng-click="register()" href=""><span>Register</span></button>
+      </div>
+      <span class="login-text">Already registered? <a href="" ng-click="login()">Log in.</a></p>
+    </div>
+  </div>
+</form>
+
+<div class="row text-center">
+  <div class="col-md-6 col-md-offset-3">
+    <div ng-show="nullemailerror" class="alert alert-danger tile-error">Please enter a valid email address.</div>
+    <div ng-show="nullpassworderror" class="alert alert-danger tile-error">Please enter a password.</div>
+    <div ng-show="passwordtooshorterror" class="alert alert-danger tile-error">Password must be longer than 8 characters.</div>
+    <div ng-show="passwordtoolongerror" class="alert alert-danger tile-error">Password must be shorter than 72 characters.</div>
+    <div ng-show="failure" class="alert alert-danger tile-error">Registration failed. Please check your details.</div>
+    <div ng-show="success" class="alert alert-success tile-success">Registered successfully.</div>
+    <div ng-show="successcheckout" class="alert alert-success tile-success">Registered successfully. You'll be at checkout shortly.</div>
+  </div>
+</div>

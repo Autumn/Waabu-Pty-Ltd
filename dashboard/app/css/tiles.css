@@ -1,0 +1,257 @@
+.tiles {
+  padding: 15px;
+}
+
+.tile {
+  border-radius: 15px;
+}
+
+.white-tile {
+  background-color: white;
+}
+
+.tile .header {
+  border-radius: 5px;
+}
+
+.purple-tile {
+  background-color: rgb(178, 194, 255)
+}
+
+.tile .purple-header {
+  border-bottom: 30px solid #b2c2ff;
+  margin-bottom: -30px;
+  border-radius: 15px;
+  background-color: #7592ff;
+}
+
+.tile .heading {
+  font-size: 24px;
+  font-weight: 800;
+  padding: 15px;
+  text-align: center;
+  display: block;
+}
+
+.tile .content {
+  padding: 15px;
+}
+
+.tile .copy {
+  display: block;
+  font-size: 18px;
+  text-align: center;
+  padding: 15px;
+}
+
+.tile-error {
+  border-radius: 60px;
+  background-color: rgb(214, 113, 135);
+  color: white;
+  border-color: transparent;
+}
+
+.tile-success {
+  border-radius: 60px;
+  background-color: rgb(102, 189, 106);
+  color: white;
+  border-color: transparent;
+}
+
+.upgrades {
+  font-size: 18px;
+}
+
+.upgrade-quantity {
+  font-weight: 700;
+}
+
+.upgrade-type {
+  text-transform: uppercase;
+}
+
+.upgrade-price {
+  font-weight: 900;
+}
+
+.upgrade-description {
+  display: block;
+}
+
+.upgrade-button {
+  padding: 10px;
+  text-align: center;
+}
+
+.upgrade-button > a, .upgrade-button > a:visited, .upgrade-button > a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.upgrade-button a:hover {
+  color: rgb(34, 147, 211);
+}
+
+.upgrade-button a:focus , .upgrade-button a:active {
+  outline: none;
+}
+
+.buttons {
+  padding: 15px;
+}
+
+.circle-button {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  line-height: 28px;
+  padding: 9px;
+  transition: background-color .2s linear;
+  color: white;
+}
+
+.circle-button:hover {
+  transition: background-color .2s linear;
+  text-decoration: none;
+}
+
+.large-circle-button {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  padding-top: 38px;
+  transition: background-color .2s linear;
+  color: white;
+  text-transform: uppercase;
+}
+
+.large-circle-button:hover {
+  transition: background-color .2s linear;
+  text-decoration: none;
+}
+
+.large-circle-button a:visited, .large-circle-button a:focus, .large-circle-button a:active {
+  text-decoration: none;
+}
+
+
+
+
+.circle-button a:visited, .circle-button a:focus, .circle-button a:active {
+}
+
+.login-label {
+  
+}
+
+.sub-select-button {
+  display: inline-block;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  line-height: 53px;
+  font-size: 12px;
+  padding: 11px;
+  text-transform: uppercase;
+  color: white;
+
+  transition: background-color 0.2s linear;
+}
+
+.sub-select-button:hover {
+  text-decoration: none;
+  color: white;
+}
+
+
+.login-button {
+  display: inline-block;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  line-height: 53px;
+  font-size: 12px;
+  padding: 11px;
+  text-transform: uppercase;
+  color: white;
+
+  transition: background-color 0.2s linear;
+}
+
+.login-button:hover {
+  transition: background-color 0.2s linear;
+  color: black;
+}
+
+.login-button a {
+  text-decoration: none;
+}
+
+.buttons a:hover, .buttons a:focus{
+  text-decoration: none;
+}
+
+
+.login-button:hover {
+  background-color: white;
+}
+
+.login-text {
+  display: block;
+  font-size: 18px;
+  padding: 15px;
+}
+
+.block-element {
+  padding: 7px;
+  display: block;
+}
+
+.finalise-button {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  font-size: 24px;
+  text-transform: uppercase;
+  padding-top: 44px;
+  transition: background-color .1s linear;
+  color: white;
+}
+
+.finalise-button:hover {
+  color: white;
+  transition: background-color .1s linear;
+  text-decoration: none;
+}
+
+.finalise-price {
+  font-size: 96px;
+  font-weight: 900;
+}
+
+.finalise-buttons {
+  padding: 75px;
+  display: inline-block;
+}
+
+.finalise-item-button {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  font-size: 18px;
+  line-height: 2;
+  padding-top: 56px;
+  text-transform: uppercase;
+  transition: background-color 0.2s linear;
+  color: white;
+}
+
+.finalise-item-button:hover {
+  text-decoration: none;
+  transition: background-color 0.2s linear;
+  color: white;
+}

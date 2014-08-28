@@ -1,0 +1,24 @@
+<div class="marketing-block light-blue-block">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+	<div class="tile purple-tile">
+	  <div class="header purple-header">
+	    <span class=heading>Login</span>
+	  </div>
+	  <div class=content>
+	    <div class=copy>
+	      <input ng-model="email" type="email" placeholder="Email" /><br/>
+	      <input ng-model="password" type="password" placeholder="Password" /><br/>
+	      <div class="buttons">
+		<a class=login-button ng-click="login()" href="">Login</a>
+	      </div>
+	      <span class="login-text">Not registered? <a href="#/register">Create an account.</a></p>
+<!--p>Forgot your password?</p-->
+	      <p>{{ error || "" }}</p>
+	  </div>
+	</div>
+      </div>
+    </div>
+  </div>
+</div>

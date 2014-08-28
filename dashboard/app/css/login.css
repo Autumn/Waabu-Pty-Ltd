@@ -1,0 +1,58 @@
+body {
+  background-color: rgb(35, 148, 212);;
+}
+
+.login {
+  text-align: center;
+  font-family: 'Lato', 'sans-serif';
+  top: 50%;
+  color: white;
+}
+
+.heading {
+  font-size: 72px;
+  font-weight: 700;
+  padding: 30px;
+  display:block;
+}
+
+.copy {
+  font-size: 18px;
+  padding: 30px;
+  display:block;
+}
+
+.login-form {
+  border-radius: 5px;
+  border-color: transparent;
+}
+
+.element-padding {
+  padding: 15px;
+}
+
+.login-form .button {
+  border: transparent;
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  background-color: black;
+  transition: background-color 0.2s linear;
+  font-size: 18px;
+}
+
+.login-form .button:hover {
+  background-color: white;
+  transition: background-color 0.2s linear;
+  color: black;
+}
+
+.login-form .input {
+  background-color: rgb(235, 255, 255);
+  font-size: 18px;
+  text-align: center;
+  color:  rgb(85, 85, 85);
+  border: transparent;
+  padding: 15px 60px;
+
+}

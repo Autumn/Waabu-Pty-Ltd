@@ -1,0 +1,489 @@
+<!DOCTYPE html><html lang="en" ng-app="myApp" class="ng-scope"><head><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide{display:none !important;}ng\:form{display:block;}</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Waabu Cloud Services</title>
+  <meta name="fragment" content="!">
+  <meta name="description" content="Cloud Hosting by Waabu - Enjoy fast, simple and easy app &amp; cloud hosting, powered by our Waabs. Our powerful virtual servers are engineered to bring you hosting power to each person or business">
+  <meta name="keywords" content="cloud server, cloud hosting, vps, vps server, vps server hosting, vps hosting, virtual server, virtual private server, ubuntu server, centos server, debian server, linux server, fedora server, linux mint server, web hosting, waabu, waabs, waabu cloud">
+
+<link href="//fonts.googleapis.com/css?family=Lato:400,900italic,700italic,400italic,300,700,900,300italic,100italic,100" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/app.css">
+
+  <link rel="stylesheet" href="css/tiles.css">
+  <link rel="stylesheet" href="corewaab/css/style.css">
+  <link rel="stylesheet" href="webwaab/css/style.css">
+  <link rel="stylesheet" href="corewaab/config/css/style.css">
+
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+
+
+
+</head>
+
+<body>
+   <div id="waabu-wrap">
+      <div id="waabu-header">
+         <waabu-menu><div ng-controller="MenuCtrl" class="ng-scope">
+  <div class="navbar navbar-default navbar-fixed-top" role="navigvation" style="">
+    <div class="container">
+      <div class="navbar-header">
+        <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="#/" class="brand">
+          <div>
+            <img src="img/logo-large.png" height="60px" width="60px">
+            <span class="title">Waabu</span>
+          </div>
+        </a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="500">Cloud Services</a>
+              <ul class="dropdown-menu" style="box-shadow: none; ">
+            	<li><a href="#/waabCloudHosting">Waabs</a></li>
+              </ul>
+            </li>
+            <li><a href="#/features">Features</a></li>
+          </ul>
+	  <ul class="nav navbar-nav navbar-right">
+
+            <li class="dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="500">
+            Checkout <span class="glyphicon glyphicon-shopping-cart"></span>(<span ng-bind="cartService.cartSize()" class="ng-binding">0</span>)</a>
+
+              <ul class="dropdown-menu" style="box-shadow: none;">
+            	<!-- ngRepeat: item in cartService.cart track by $index -->
+                <li ng-show="cartService.cartSize() == 0" class="">No items.</li>
+                <li ng-show="cartService.cartSize() &gt; 0" style="border-top: 1px solid whitesmoke;" class="ng-hide"><a href="" ng-click="sendToCheckout()">Checkout</a></li>
+              </ul>
+            </li>
+
+            <li><a href="https://dashboard.waabu.com">Log in</a></li>
+            <li><a href="#/register">Sign up</a></li>
+          </ul>
+        </div><!--/.nav-header -->
+      </div>
+    </div>
+    
+  </div>
+
+</waabu-menu>
+      </div>
+      <div id="waabu-main" style="height:100%;">
+         <!-- ngView:  --><div ng-view="" autoscroll="false" class="reveal-animation ng-scope" style=""><div id="waabu-content" ng-controller="WaabCtrl" class="ng-scope">
+  <div class="marketing-block light-blue-block">
+    <div class="container product-header">
+      <div class="row">
+        <div class="col-md-12 product-copy">
+          <p><span class="product-heading dark-blue-text">Waab Cloud Hosting</span></p>
+          <p><span class="product-flavour dark-blue-text">Waabs offer ultimate control, power and performace. Develop, engineer, and create everything you imagine on a Waab of your own.</span></p>
+
+        </div>
+      </div>
+
+      <div ng-controller="WaabSelectCtrl" class="ng-scope">
+        <div class="container" style="">
+	  <div class="row corewaab-tiles">
+	    <div class="col-md-2 col-md-offset-1" style="">
+	      <waabu-service-box content="serviceOne" class="ng-isolate-scope"><div class="landing-tile purple">
+  <div class="purple-header">
+    <div class="row">
+      <div class="col-xs-12 col-md-12 heading ng-binding">
+	BaseWaab
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-6 col-md-6 value ng-binding">
+	0.5GB
+    </div>
+    <div class="col-xs-6 col-md-6 key">
+	RAM 
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-6 col-md-6 value ng-binding">
+      2
+    </div>
+    <div class="col-xs-6 col-md-6 key">
+	CPU 
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-6 col-md-6 value ng-binding">
+	10GB
+    </div>
+    <div class="col-xs-6 col-md-6 key">
+	SSD
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12 col-md-12 pricing">
+      <span class="monthly-price ng-binding">$9<span class="price-subscript">/mo</span></span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 buttons">
+      <a class="button purple-button" href="" ng-click="selectService()">Buy</a>
+    </div>
+  </div>
+</div> 
+</waabu-service-box>
+            </div>
+	    <div class="col-md-2" style="">
+	      <waabu-service-box content="serviceTwo" class="ng-isolate-scope"><div class="landing-tile cyan">
+  <div class="cyan-header">
+    <div class="row">
+      <div class="col-xs-12 col-md-12 heading ng-binding">
+	CoreWaab
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-6 col-md-6 value ng-binding">
+	1GB
+    </div>
+    <div class="col-xs-6 col-md-6 key">
+	RAM 
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-6 col-md-6 value ng-binding">
+      2
+    </div>
+    <div class="col-xs-6 col-md-6 key">
+	CPU 
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-6 col-md-6 value ng-binding">
+	20GB
+    </div>
+    <div class="col-xs-6 col-md-6 key">
+	SSD
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12 col-md-12 pricing">
+      <span class="monthly-price ng-binding">$18<span class="price-subscript">/mo</span></span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 buttons">
+      <a class="button cyan-button" href="" ng-click="selectService()">Buy</a>
+    </div>
+  </div>
+</div> 
+</waabu-service-box>
+	    </div>
+	    <div class="col-md-2" style="">
+	      <waabu-service-box content="serviceThree" class="ng-isolate-scope"><div class="landing-tile pink-tile">
+  <div class="pink-tile-header">
+    <div class="row">
+      <div class="col-xs-12 col-md-12 heading ng-binding">
+	DevWaab
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-6 col-md-6 value ng-binding">
+	2GB
+    </div>
+    <div class="col-xs-6 col-md-6 key">
+	RAM 
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-6 col-md-6 value ng-binding">
+      3
+    </div>
+    <div class="col-xs-6 col-md-6 key">
+	CPU 
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-6 col-md-6 value ng-binding">
+	30GB
+    </div>
+    <div class="col-xs-6 col-md-6 key">
+	SSD
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12 col-md-12 pricing">
+      <span class="monthly-price ng-binding">$35<span class="price-subscript">/mo</span></span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 buttons">
+      <a class="button pink-button" href="" ng-click="selectService()">Buy</a>
+    </div>
+  </div>
+</div> 
+</waabu-service-box>
+    	    </div>
+	    <div class="col-md-2" style="">
+	      <waabu-service-box content="serviceFour" class="ng-isolate-scope"><div class="landing-tile purple">
+  <div class="purple-header">
+    <div class="row">
+      <div class="col-xs-12 col-md-12 heading ng-binding">
+	CloudWaab
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-6 col-md-6 value ng-binding">
+	4GB
+    </div>
+    <div class="col-xs-6 col-md-6 key">
+	RAM 
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-6 col-md-6 value ng-binding">
+      4
+    </div>
+    <div class="col-xs-6 col-md-6 key">
+	CPU 
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-6 col-md-6 value ng-binding">
+	30GB
+    </div>
+    <div class="col-xs-6 col-md-6 key">
+	SSD
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12 col-md-12 pricing">
+      <span class="monthly-price ng-binding">$60<span class="price-subscript">/mo</span></span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 buttons">
+      <a class="button purple-button" href="" ng-click="selectService()">Buy</a>
+    </div>
+  </div>
+</div> 
+</waabu-service-box>
+  	    </div>
+	    <div class="col-md-2" style="">
+	      <waabu-service-box content="serviceFive" class="ng-isolate-scope"><div class="landing-tile red-tile">
+  <div class="red-tile-header">
+    <div class="row">
+      <div class="col-xs-12 col-md-12 heading ng-binding">
+	PowerWaab
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-6 col-md-6 value ng-binding">
+	8GB
+    </div>
+    <div class="col-xs-6 col-md-6 key">
+	RAM 
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-6 col-md-6 value ng-binding">
+      8
+    </div>
+    <div class="col-xs-6 col-md-6 key">
+	CPU 
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-6 col-md-6 value ng-binding">
+	80GB
+    </div>
+    <div class="col-xs-6 col-md-6 key">
+	SSD
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12 col-md-12 pricing">
+      <span class="monthly-price ng-binding">$130<span class="price-subscript">/mo</span></span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 buttons">
+      <a class="button red-button" href="" ng-click="selectService()">Buy</a>
+    </div>
+  </div>
+</div> 
+</waabu-service-box>
+	    </div>
+	  </div>
+        </div>
+      </div>
+     </div>
+   </div>
+
+     <div class="marketing-block brand-blue-block">
+       <div class="container">
+  	  <div class="row">
+
+	  <div class="col-sm-12 col-md-6 marketing-mid-text">
+            The Waabu Cloud brings you the power and reliability of the net to your keyboard, touchscreen, or whatever device you're using. Our Waab Platform ensures your servers, apps and programs run at peak performance. Try it out, you won't be disappointed.
+	  </div>
+
+	  <div class="col-md-6 col-xs-12 marketing-big-text">
+	    Three clicks and you will be on the Waabu Cloud with a blazing fast Waab.
+	  </div>
+	</div>
+      </div>
+    </div>
+
+    <div class="marketing-block light-grey-block">
+    <div class="container">
+    <div class="row faq-heading" style="text-align: center;">
+      Questions?
+    </div>
+    <div class="row">
+
+	<div class="col-md-offset-1 col-md-5">
+	<span class="faq-q">How much bandwidth?</span>
+        <span class="faq-a">We currently offer 200GB monthly bandwidth on all Waab subscriptions.</span>
+	<!--p>Our services have 2 tiers of pricing, its either per month based pricing (1 month) or a 12 month term. With your commitment to us for a 12month period, we make sure you are rewarded.</p-->
+	</div>
+
+	<div class="col-md-5">
+	<span class="faq-q">What can I do on a Waab?</span>
+	<span class="faq-a">Everything! We provide you with root administrator access to each Waab. The only software that runs on a Waab is your software.</span>
+	</div>
+	
+    </div> <!--End of Row -->
+
+
+    <div class="row">
+	<div class="col-md-offset-1 col-md-5">
+	<span class="faq-q">How am I billed?</span>
+	<span class="faq-a">Waabs are billed at a monthly rate.</span>
+	</div>
+
+        <div class="col-md-5">
+        <span class="faq-q">Am I billed while my Waab is powered off?</span>
+        <span class="faq-a">Yes. Your CPU, RAM, storage and network resources are all reserved for you during your subscription.</span>
+        </div>
+
+
+      </div>
+
+    <div class="row">
+	<div class="col-md-offset-1 col-md-5">
+	<span class="faq-q">Which plan should I choose?</span>
+	<span class="faq-a">If you're unsure, start with our BaseWaab and work up from there.</span>
+	</div>
+	
+	<div class="col-md-5">
+	<span class="faq-q">How can I pay?</span>
+	<span class="faq-a">Waabu accepts PayPal, Visa, MasterCard, American Express and Bitcoin.</span>
+	</div>
+
+    </div>
+
+  </div> <!--End of Row -->
+</div>
+
+  <waabu-footer><!-- div style="background-color: #808080;" -->
+<div class="footer">
+
+  <div class="container">
+
+
+    <div class="row">
+
+      <div class="col-md-3">
+        <ul>
+        <li><span class="heading">Overview</span></li>
+	<li><a href="#/coreWaab">Plans &amp; Pricing</a></li>
+	<li><a href="#/features">Features</a></li>
+	<li><a href="#/comingsoon">Dashboard</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+	<ul>
+        <li><span class="heading">Community</span></li>
+	<li><a href="#/comingsoon">Tutorials</a></li>
+	</ul>
+      </div>
+
+      <div class="col-md-3">
+
+	<ul>
+        <li><span class="heading">Company</span></li>
+	<li><a href="#/company">About Us</a></li>
+	<li><a href="#/comingsoon">Blog</a></li>
+	<!--li><a href="#/contact">Contact</a></li-->
+	</ul>
+
+      </div>
+
+
+      <div class="col-md-3">
+	<ul>
+        <li><span class="heading">Connect</span></li>
+	<li><a href="#/comingsoon">Google+</a></li>
+	<li><a href="https://www.facebook.com/WaabuCloud">Facebook</a></li>
+	<li><a href="https://twitter.com/WaabuCloud">Twitter</a></li>
+	<li><a href="//linkedin.com/company/waabu">LinkedIn</a></li>
+	</ul>
+      </div>
+
+
+    </div>
+  </div>
+<div class="container">
+	<!--div id="footer-copyright" class="row"-->
+        <div class="row" style="padding:30px;">
+		
+	<div class="col-sm-2 col-sm-offset-3">
+	© 2014  Waabu Pty Ltd 
+	</div>
+
+	<div class="col-sm-2">
+	<a href="#/termsOfService">Terms of Service</a>
+	</div>
+
+	<div class="col-sm-2">
+	<a href="#/privacyPolicy">Privacy Policy</a>
+	</div>
+
+	</div>
+</div>
+
+</div>
+</waabu-footer>
+</div></div>
+      </div>
+   </div>
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+</body></html>

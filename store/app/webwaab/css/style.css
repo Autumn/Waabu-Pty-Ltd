@@ -1,0 +1,78 @@
+.webwaab-tiles {
+  padding: 15px;
+}
+
+.webwaab-tile {
+background-color: #f6fbfe; 
+}
+
+.webwaab-tile .img {
+  display: block;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.webwaab-tile .title {
+  font-size: 24px;
+  padding: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.webwaab-tile .key {
+  padding: 5px;
+  font-size: 18px;
+  font-weight: lighter;
+  text-align: left;
+}
+
+.webwaab-tile .value {
+  padding: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: right;
+}
+
+.webwaab-tile .description {
+  display: block;
+  padding: 5px;
+  text-align: center;
+  font-variant: small-caps; 
+}
+
+.webwaab-tile .pricing {
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.webwaab-tile .monthly_price {
+  font-size: 48px;
+  color: #1d1d1d;
+}
+.webwaab-tile .price_month {
+  font-size: 24px;
+  color: #1d1d1d;
+}
+
+.webwaab-tile .yearly_price {
+  font-size: 16px;
+  color: #1d1d1d;
+}
+.webwaab-tile .yearly_price_month {
+  font-size: 8px;
+  color: #1d1d1d;
+}
+.webwaab-tile .buttons {
+  text-align:center;
+  padding: 15px;
+}
+
+.webwaab-tile .button {
+  display: inline-block;
+  width: 100px;
+  padding: 5px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}

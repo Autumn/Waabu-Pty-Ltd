@@ -1,0 +1,20 @@
+<div>
+  <input ng-model="label" type="text" ng-minlength=3 ng-maxlength=63 ng-required /><span ng-show="invalidlabel">{{ labelerror }}</span>
+  <select ng-model="tld" ng-options="t.tld for t in tlds" >
+  </select>
+  <button ng-click="check()">Check Availability</button>
+</div>
+<div ng-show="available">
+  Name: <input ng-model="user.name" ng-maxlength=255 ng-required=true /><br/>
+  Company: <input ng-model="user.company" ng-maxlength=255/><br/>
+  Address: <input ng-model="user.address" ng-maxlength=255 ng-required=true /><br/>
+  City: <input ng-model="user.city" ng-maxlength=255 ng-required=true /><br/>
+  State: <input ng-model="user.state" ng-maxlength=255 ng-required=true /><br/>
+  Country: <select ng-model="user.country" ng-options="c.code as c.name for c in countries" ng-required=true></select><br/>
+  Postcode: <input ng-model="user.postcode" ng-maxlength=20 ng-required=true /><br/>
+  Phone: <select ng-model="user.cc" ng-options="c.code as c.id + ' (' + c.code + ')' for c in phonecodes" ng-required=true></select><input ng-model="user.phone" ng-required=true /><br/>
+  <button ng-click="confirm()">Confirm Details</button> 
+</div>
+<div ng-show="detailsentered">
+  <button>Continue</button>
+</div>

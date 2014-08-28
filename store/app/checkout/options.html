@@ -1,0 +1,14 @@
+<div class=col-xs-4>
+<a href="" ng-click="payPaypal()">PayPal</a>
+</div>
+<div class=col-xs-4>
+<a href="" ng-click="payBitcoin()">Bitcoin</a>
+</div>
+<div class=col-xs-4>
+Google Wallet
+</div>
+
+<form id="CartForm" method="post" action="/pay" target="PaypalWindow">
+   <input type="hidden" name="session" value="{{ sessionId }}" />
+   <input type="hidden" name="cart" value="{{ cart }}" />
+</form>

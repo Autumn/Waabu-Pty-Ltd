@@ -1,0 +1,50 @@
+<div id=waabu-content ng-controller=LandingCtrl> 
+  <div class=landing-header>
+
+  <div class=container >
+    <div class="row text-center heading-space">
+      <span class="heading">Sorry! We're all sold out.</span>
+    </div>
+
+    <div class="row heading-space text-center">
+       <span class=subheading>We love that you want to subscribe to Waabu. Unfortunately we're unable to accept any more customers at the moment. Please come back soon, or create an account to be notified when we're back in stock.</span>
+    </div>
+
+      <div class="text-center col-md-6 col-md-offset-3 signup-form heading-space">	
+        <div ng-controller="RegFormCtrl">
+	<!--div landing-registration-->
+	  <!--form  class="form-inline" role="form"-->
+            <div class=row>
+            <span class=form-padding>
+	      <input ng-model=email type="email" class="input form-control" placeholder="Email">
+            </span>
+           
+            <span class=form-padding>
+	      <input ng-model=password type="password" class="input form-control" placeholder="Password">
+            </span>
+            </div>
+            <div class="row text-center">
+            <span class=form-padding>
+	      <a class="form-button" href=""  ng-click="registerAccount()">Create Account</a>
+            </span>
+            </div>
+
+	  <!--/form-->
+	  <div class="form-alerts"> 
+	    <div class=row>
+	      <div class="col-md-12">
+	        <div ng-show="registerSuccess" class="alert-appear alert alert-success tile-success">Your account has been created successfully. You'll receive an email with details.</div>
+		<div ng-show="registerFailure" class="alert alert-danger tile-error">{{ errorMessage }}</div>
+              </div>
+            </div>
+          </div>
+        <!--/div--> <!--landing-registration-->
+        </div>
+      </div>
+
+    </div> 
+  </div>
+  <div id=waabu-footer>
+    <waabu-footer></waabu-footer>
+  </div>
+</div>

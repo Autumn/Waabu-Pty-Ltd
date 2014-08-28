@@ -1,0 +1,12 @@
+source 'https://rubygems.org'
+gem "mail"
+gem "public_suffix"
+gem "couchrest"
+gem "sinatra"
+gem "json"
+gem 'paypal-sdk-rest'
+gem 'bitcoin'
+gem 'rufus-scheduler'
+gem 'rqrcode'
+gem 'rqrcode_png'
+gem 'ipaddress'

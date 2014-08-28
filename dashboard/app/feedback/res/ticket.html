@@ -1,0 +1,51 @@
+<div class=container>
+  <div class="row tile-padding">
+
+    <div class="tile brand-blue-tile">
+      <div class="brand-blue-tile-header">
+        <span class="heading">Request Support</span>
+      </div>
+      <div class="row tile-padding">
+         <form role="form">
+        <div class="form-group">
+        <label>Subject</label>
+        <input ng-model="subject" type="text" class="form-control" id="subject" placeholder="Enter Subject">
+        </div>
+
+        <div class="form-group">
+        <label for="Describe Issue">Describe Issue</label>
+        <textarea class="form-control" ng-model="body" placeholder="Enter Description" rows="3"></textarea>
+        </div>
+
+        <a type="submit" ng-click="sendTicket()" href="" class="large-circle-button brand-blue-button">Submit</a>
+        </form>
+        <div class="row" style="padding:15px;">
+          <div class="alert alert-danger tile-error">Error</div>
+        </div>
+        <div class="row" style="padding:15px;">
+          <div class="alert alert-success tile-success">Request sent successfully. You'll get a response from the Waabu team as soon as possible.</div>
+        </div>
+      </div>
+    </div>
+
+   <!--div class=support-view>
+    <div class="roo" style="padding: 40px;">
+
+        <form role="form">
+        <div class="form-group">
+        <label>Subject</label>
+        <input ng-model="subject" type="text" class="form-control" id="subject" placeholder="Enter Subject">
+        </div>
+
+        <div class="form-group">
+        <label for="Describe Issue">Describe Issue</label>
+        <textarea class="form-control" ng-model="body" placeholder="Enter Description" rows="3"></textarea>
+        </div>
+
+        <button type="submit" ng-click="sendTicket()" class="btn btn-default">Submit</button>
+        </form>
+
+    </div-->
+    
+  </div>
+</div>

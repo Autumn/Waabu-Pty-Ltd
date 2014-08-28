@@ -1,0 +1,59 @@
+<div class=container>
+  <div class="row" >
+    <div class="col-md-12" style="padding: 30px;">
+      <div class="tile brand-blue-tile">
+        <div class="brand-blue-tile-header">
+           <span class="heading">{{ name }}</span>
+        </div>
+        <div class="row" style="padding:30px;">
+	 <!--div ng-show="dataLoading">
+	    <div class="row text-center">
+	      Loading Data
+	    </div>
+	 </div-->
+
+         <div ng-show="dataReceived">
+	   <div class=row style="min-height:100px;">
+	     <!--div class="col-md-2 col-md-offset-1 text-center">
+	       <span class="waab-stats-heading">OS</span>
+	       <span class="waab-stats-value">Arch Linux</span>
+	     </div-->
+
+	     <div class="col-md-2 col-md-offset-3 text-center">
+	       <span class="waab-stats-heading">IP</span>
+	       <div ng-show=hasIp>
+	         <span class="waab-stats-value">{{ ipv4 }}</span><span class="waab-stats-value">{{ ipv6 }}</span>
+	       </div>
+	       <div ng-show="!hasIp">
+	         <span class="waab-stats-value">No IP detected.</span>
+	       </div>
+	     </div>
+	     <div class="col-md-2 text-center">
+	       <span class="waab-stats-heading">Storage</span>
+	       <span class="waab-stats-value">{{ storage }}</span>
+	     </div>
+	     <div class="col-md-4 text-center">
+	       <span class="waab-stats-heading">Power</span>
+	       <span class="waab-stats-value" style="text-transform: capitalize;">{{ powerstate }}</span>
+	       <a class="powerstate-button red-button button-link" ng-show="canPower && isOn" ng-click="powerOff()">Shutdown</a>
+	       <a class="powerstate-button dark-blue-button button-link" ng-show="canPower && isOn" ng-click="reboot()">Reboot</a>
+	       <a class="powerstate-button light-green-button button-link" ng-show="canPower && isOff" ng-click="powerOn()">Start</a>
+	     </div>
+	   </div>
+
+	   <div class="text-center row">
+	     <div class="col-md-6 col-md-offset-1">
+	       <span class="waab-stats-heading">CPU</span>
+               <svg id="cpu-chart"></svg>
+	     </div>
+	     <div class=col-md-4 id="ram">
+	       <span class="waab-stats-heading">RAM</span>
+               <svg id="ram-chart"></svg>
+	     </div>
+	   </div>
+         </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

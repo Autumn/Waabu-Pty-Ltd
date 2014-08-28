@@ -1,0 +1,29 @@
+<div ng-controller=RegisterCtrl>
+  <div class=row>
+    <span class=form-padding>
+      <input ng-model=email type="email" class="input form-control" placeholder="Email">
+    </span>
+
+    <span class=form-padding>
+      <input ng-model=password type="password" class="input form-control" placeholder="Password">
+    </span>
+  </div>
+  <div class="row text-center">
+    <span class=form-padding>
+      <a class="form-button" href="" ng-click="register()">Create Account</a>
+    </span>
+  </div>
+
+  <div class="form-alerts">
+    <div class=row>
+      <div class="col-md-12">
+    <div ng-show="nullemailerror" class="alert alert-danger tile-error">Please enter a valid email address.</div>
+    <div ng-show="nullpassworderror" class="alert alert-danger tile-error">Please enter a password.</div>
+    <div ng-show="passwordtooshorterror" class="alert alert-danger tile-error">Password must be longer than 8 characters.</div>
+    <div ng-show="passwordtoolongerror" class="alert alert-danger tile-error">Password must be shorter than 72 characters.</div>
+    <div ng-show="success" class="alert alert-success tile-success">Registered successfully. You'll receive an email with details shortly.</div>
+    <div ng-show="failure" class="alert alert-danger tile-error">Registration failed. Please check your details.</div>
+      </div>
+    </div>
+  </div>
+</div>

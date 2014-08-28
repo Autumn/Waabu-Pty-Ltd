@@ -1,0 +1,9 @@
+<div> 
+<h1>Register</h1>
+Email: <input ng-model="email" type="email" /><br/>
+Password: <input ng-model="password" type="password" /><br/>
+Confirm Password: <input ng-model="passwordconf" type="password" /><br/><br/>
+<button ng-click="register()">Register</button>
+<p>{{ error || "" }}</p>
+<p>Already registered? Log in</p>
+</div>

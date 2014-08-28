@@ -1,0 +1,121 @@
+<div class="marketing-block light-blue-block">
+  <div class=container>
+    <div class=row>
+      <div class="col-lg-10 col-lg-offset-1 col-md-6 col-md-offset-3 tile-space">
+        <div class="tile brand-blue-tile">
+          <div class="brand-blue-tile-header">
+            <div class="row">
+              <div class="col-md-12 heading">
+                Select Operating System
+              </div>
+            </div>
+          </div>
+	  <div class=row>
+	    <div class="col-md-12 content">
+          <table class=os-config-table>
+            <tr>
+              <td>
+                <img src="img/ubuntu-logo.png" width="50" height="50">
+              </td>
+              <td>
+                Ubuntu
+              </td>
+              <td>
+                <div class="os-buttons">
+                  <label class="button brand-blue-button" href="" ng-click='selectOS("ubuntu-14.04-32")'>14.04 (32 bit)</label>
+                  <label class="button brand-blue-button" ng-click='selectOS("ubuntu-14.04-64")'>14.04 (64 bit)</label>
+                  <label class="button brand-blue-button" ng-click='selectOS("ubuntu-13.10-32")'>13.10 (32 bit)</label>
+                  <label class="brand-blue-button button" ng-click='selectOS("ubuntu-13.10-64")'>13.10 (64 bit)</label>
+
+                  <label class="button brand-blue-button" ng-click='selectOS("ubuntu-12.04-32")'>12.04 (32 bit)</label>
+                  <label class="brand-blue-button button" ng-click='selectOS("ubuntu-12.04-64")'>12.04 (64 bit)</label>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <img src="img/centos-logo.png" width="50" height="50">
+              </td>
+              <td>
+                CentOS
+              </td>
+              <td>
+                <div class="os-buttons">
+                  <label class="brand-blue-button button" href="" ng-click='selectOS("centos-6.5-32")'>6.5 (32 bit)</label>
+                  <label class="button brand-blue-button" href="" ng-click='selectOS("centos-6.5-64")'>6.5 (64 bit)</label>
+                  <label class="brand-blue-button button" href="" ng-click='selectOS("centos-5.10-32")'>5.10 (32 bit)</label>
+                  <label class="brand-blue-button button" href="" ng-click='selectOS("centos-5.10-64")'>5.10 (64 bit)</label>
+                </div>
+              </td>
+            </tr>
+
+<tr>
+<td>
+<img src="img/arch-logo.png" width="50" height="50">
+</td>
+<td>
+Arch Linux
+</td>
+<td>
+                <div class="os-buttons">
+                  <label class="button brand-blue-button" href="" ng-click='selectOS("arch-2014-64")'>2014-04 (64 bit)</label>
+                </div>
+
+</td>
+</tr>
+
+<!--tr>
+<td>
+<img src="img/fedora-logo.png" width="50" height="50">
+</td>
+<td>
+Fedora
+</td>
+<td>
+                <div class="os-buttons">
+                  <label class="button brand-blue-button" href="" ng-click='selectOS("fedora-20-32")'>20 (32 bit)</label>
+                  <label class="button brand-blue-button" href="" ng-click='selectOS("fedora-20-64")'>20 (64 bit)</label>
+                </div>
+
+</td>
+</tr-->
+
+<tr>
+<td>
+<img src="img/debian-logo.png" width="50" height="50">
+</td>
+<td>
+Debian
+</td>
+<td>
+<div>
+                <div class="os-buttons">
+                  <label class="brand-blue-button button" href="" ng-click='selectOS("debian-7.4-32")'>7.4 (32 bit)</label>
+                  <label class="button brand-blue-button" href="" ng-click='selectOS("debian-7.4-64")'>7.4 (64 bit)</label>
+                </div>
+
+</div>
+</td>
+</tr>
+
+          </table>
+	    </div>
+	  </div>
+ 
+          <div class="row text-center">
+            <div class="col-md-8 col-md-offset-2">
+            <div class="alert alert-danger tile-error" ng-show="oserror">Please select an operating system.</div>
+            </div>
+          </div>
+          <div class="row text-center">
+            <div class="col-md-8 col-md-offset-2">
+            <div class="alert alert-success tile-success" ng-show="osSelected">Selected {{ os }}.</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

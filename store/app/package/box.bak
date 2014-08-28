@@ -1,0 +1,6 @@
+<div style="height:inherit;">
+<p>{{ content.packageId }}</p>
+<button ng-click="selectPackage()">Select</button>
+</div>
+
+

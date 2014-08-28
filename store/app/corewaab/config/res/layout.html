@@ -1,0 +1,41 @@
+<div id="waabu-content" ng-controller="CoreWaabConfigCtrl">
+
+  <waabu-config-header></waabu-config-header>
+  <waabu-config-os-select></waabu-config-os-select>
+  <waabu-config-ssh-config></waabu-config-ssh-config>
+  <waabu-config-upgrades></waabu-config-upgrades>
+
+  <div class="marketing-block light-blue-block">
+    <div class=container>
+      <div class=row>
+        <div class="col-md-12 text-center">
+        <div class="alert alert-danger tile-error" ng-show="error">Error! Check the options and try again.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <waabu-config-next-step></waabu-config-next-step>
+
+<div class=container>
+   <div class="row">
+   </div>
+   <div class="row">
+   </div>
+   <div class="row">
+   </div>
+   <div class="row">
+   </div>
+   </div>
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-50307400-1', 'waabu.com');
+  ga('send', 'pageview');
+
+</script>

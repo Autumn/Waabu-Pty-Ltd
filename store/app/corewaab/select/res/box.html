@@ -1,0 +1,44 @@
+<div class="landing-tile purple">
+  <div class="purple-header">
+    <div class=row>
+      <div class="col-xs-12 col-md-12 heading">
+	{{ title }}
+      </div>
+    </div>
+  </div>
+  <div class=row>
+    <div class="col-xs-6 col-md-6 value">
+	{{ ram }}GB
+    </div>
+    <div class="col-xs-6 col-md-6 key">
+	RAM 
+    </div>
+  </div>
+  <div class=row>
+    <div class="col-xs-6 col-md-6 value">
+      {{ cpu }}
+    </div>
+    <div class="col-xs-6 col-md-6 key">
+	CPU 
+    </div>
+  </div>
+  <div class=row>
+    <div class="col-xs-6 col-md-6 value">
+	{{ storage }}GB
+    </div>
+    <div class="col-xs-6 col-md-6 key">
+	SSD
+    </div>
+  </div>
+
+  <div class=row>
+    <div class="col-xs-12 col-md-12 pricing">
+      <span class=monthly-price>${{ price }}<span class=price-subscript>/mo</span></span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 buttons">
+      <a class="button purple-button" href="" ng-click="selectService()">Buy</a>
+    </div>
+  </div>
+</div> 

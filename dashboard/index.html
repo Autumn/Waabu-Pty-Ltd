@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang=en ng-app="myApp">
+
+<head>
+
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
+
+<meta name="google-signin-clientid" content="133704616698-jqb0agb5ued6663qrt4o31arkcdefh71.apps.googleusercontent.com" />
+<!--<meta name="google-signin-scope" content="profile" />-->
+<meta name="google-signin-callback" content="signinCallback" />
+<!--meta name="google-signin-requestvisibleactions" content="http://schemas.google.com/AddActivity" /-->
+<meta name="google-signin-cookiepolicy" content="single_host_origin" />
+
+<style>
+body {
+  padding: 70px;
+}
+</style>
+
+</head>
+
+<body role="document" onload="initLogin()">
+
+<div id="fb-root"></div>
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-left navbar-header">
+      <a href="/" class="navbar-brand">Waabu</p>
+      <ul class="nav navbar-nav">
+        <li><a href="#">Cloud Hosting</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">FAQs & Support</a></li>
+      </ul>
+    </div>
+    
+    <div class="navbar-right">
+    <ul class="nav navbar-nav">
+      <li class="dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">Cart (0)</a>
+        <ul class="dropdown-menu" role="menu">
+          <li class="divider"></li>
+          <li><a href="">Checkout</a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">Sign in</a> 
+        <ul class="dropdown-menu" role="menu">
+          <li>
+             <a href="" id="googleSignIn" onclick="googleLogin()">Google</a>
+          </li>
+          <li>
+            <a href="" onclick="facebookLogin()">Facebook</a> 
+          </li>
+          <li><a href="">PayPal</a></li>
+          <li class="divider"></li>
+          <li><a href="">No account?</a></li>
+        </ul>
+
+      </li>
+    </ul>
+    </div>
+  </div>
+</div>
+
+<div ng-view>
+
+</div>
+</div>
+
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+<script src="app/lib/angular/angular.js"></script>
+<script src="app/lib/angular/angular-route.js"></script>
+<script src="app/js/app.js"></script>
+<script src="app/js/services.js"></script>
+<script src="app/js/controllers.js"></script>
+<script src="app/js/filters.js"></script>
+<script src="app/js/directives.js"></script>
+
+
+<!-- Google+ Login -->
+<script type="text/javascript">
+  (function() {
+   var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+   po.src = 'https://apis.google.com/js/client:plusone.js';
+   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+   })();
+
+function signinCallback(authResult) {
+  if (authResult['status']['signed_in']) {
+    // Update the app to reflect a signed in user
+    // Hide the sign-in button now that the user is authorized, for example:
+    
+    // TO DO change "sign in" button text to "account"
+
+    gapi.client.request({
+      "path": "/plus/v1/people/me/openIdConnect",
+      "callback" : f
+    });
+  } else {
+    // Update the app to reflect a signed out user
+    // Possible error values:
+    //   "user_signed_out" - User is signed-out
+    //   "access_denied" - User denied access to your app
+    //   "immediate_failed" - Could not automatically log in the user
+    console.log('Sign-in state: ' + authResult['error']);
+  }
+}
+
+function f(jsonResp, rawResp) {
+  console.log(JSON.stringify(jsonResp));
+  console.log(JSON.stringify(rawResp));
+}
+
+function googleLogin() {
+  gapi.auth.signIn({'scope':'profile email'});
+}
+
+</script>
+
+<!-- Facebook Login -->
+<script>
+  window.fbAsyncInit = function() {
+  FB.init({
+    appId      : 544861082288402,
+    status     : true, // check login status
+    cookie     : true, // enable cookies to allow the server to access the sessi
+    xfbml      : true  // parse XFBML
+  });
+  FB.Event.subscribe('auth.authResponseChange', function(response) {
+    if (response.status === 'connected') {
+      testAPI();
+    } else if (response.status === 'not_authorized') {
+      FB.login(done, {scope: 'email'});
+    } else {
+      FB.login(done, {scope: 'id, first_name, last_name, email'});
+    }
+  });
+  };
+  function done() {
+    alert("logged in");
+  }
+
+  (function(d){
+   var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+   if (d.getElementById(id)) {return;}
+   js = d.createElement('script'); js.id = id; js.async = true;
+   js.src = "//connect.facebook.net/en_US/all.js";
+   ref.parentNode.insertBefore(js, ref);
+  }(document));
+
+  function testAPI() {
+    console.log('Welcome!  Fetching your information.... ');
+    FB.api('/me', function(response) {
+      console.log('Good to see you, ' + response.name + '.');
+      console.log(JSON.stringify(response));
+      loginManager.setDetails(response.id, response.first_name, response.last_name);
+    });
+  }
+  
+  function facebookLogin() {
+    FB.login();
+  }
+</script>
+
+<script>
+
+function Login() {
+  this.loggedIn = false;
+}
+
+Login.prototype.setDetails = function(id, firstName, lastName) {
+  if (this.loggedIn == false) {
+    this.id = id;
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.loggedIn = true;
+    alert(this.id + " " + this.firstName + " " + this.lastName);
+  }
+}
+
+var loginManager; 
+
+function initLogin() {
+  loginManager = new Login();
+}
+
+</script>
+
+</body>
+
+</html>

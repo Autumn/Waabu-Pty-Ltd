@@ -1,0 +1,54 @@
+<div id="waabu-content" ng-controller="WaabConfigCtrl">
+
+  <waabu-config-header></waabu-config-header>
+  <waabu-config-os-select></waabu-config-os-select>
+  <waabu-config-ssh-config></waabu-config-ssh-config>
+  <waabu-config-upgrades></waabu-config-upgrades>
+
+  <div class="marketing-block light-blue-block">
+    <div class=container>
+      <div class="row text-center">
+	<div class="col-md-6 col-md-offset-3">
+	  <div class="tile brand-blue-tile"> 
+	    <div class="brand-blue-tile-header"> 
+	      <span class=heading>Summary</span>
+	    </div>
+
+	    <div class="copy">
+              <span class="item-summary-name">{{ itemName }}</span>
+              <span class="item-summary-detail">{{ itemOs }}</span>
+              <span class="item-summary-detail">{{ itemCpu }}</span>
+              <span class="item-summary-detail">{{ itemRam }}</span>
+              <span class="item-summary-detail" style="text-transform:uppercase;">{{ itemStorage }} {{itemStorageType }}</span>
+	      <div class="item-summary-price">${{ price }}</div>
+	    </div>
+
+	  </div>
+	</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="marketing-block light-blue-block">
+    <div class=container>
+      <div class=row>
+        <div class="col-md-12 text-center">
+        <div  ng-show="error" class="alert alert-danger tile-error">Error! Check the options and try again.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <waabu-config-next-step></waabu-config-next-step>
+
+<div class=container>
+   <div class="row">
+   </div>
+   <div class="row">
+   </div>
+   <div class="row">
+   </div>
+   <div class="row">
+   </div>
+   </div>
+</div>

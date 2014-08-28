@@ -1,0 +1,20 @@
+<div id="waabu-content">
+  <div class=container>
+
+
+    <!-- hide if no due payments -->
+    <div class="row text-center heading-padding">
+      <span class="dashboard-heading">Due Payments</span>  
+    </div>
+    <div class="row">
+      <due-payments></due-payments>
+    </div>
+
+    <div class="row text-center heading-padding">
+      <span class="dashboard-heading">Billing History</span>  
+    </div>
+    <div class="row">
+      <billing-details ng-repeat="receipt in payments track by $index" receipt="receipt"></billing-details>
+    </div>
+  </div>
+</div>

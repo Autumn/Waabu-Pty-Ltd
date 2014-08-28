@@ -1,0 +1,123 @@
+<div class="marketing-block light-blue-block">
+  <div class=container>
+    <div class="row text-center">
+      <span class=marketing-heading>Subscribe to Waabu</span>
+    </div>
+    <div class="row text-center">
+        <div class=col-md-6 style="padding:30px;">
+          <div class="tile dark-blue-tile">
+            <div class="dark-blue-tile-header">
+              <span class="heading">
+              Monthly
+              </span>
+            </div>
+            <div class=copy>
+              <span class="finalise-price">${{ monthly }}</span>
+            </div>
+          <div class=buttons>
+          <a class="sub-select-button dark-blue-button" href="" ng-click="selectMonthly()">Select</a> 
+          </div>
+
+          </div>
+        </div>
+        <div class=col-md-6 style="padding:30px;">
+          <div class="tile red-tile">
+            <div class="red-tile-header">
+              <span class="heading">
+              Yearly
+              </span>
+            </div>
+          <div class=copy>
+            <span class="finalise-price">${{ yearly }}</span>
+          </div>
+          <div class=buttons>
+          <a class="sub-select-button red-button" href="" ng-click="selectYearly()">Select</a> 
+          </div>
+        </div>
+
+    </div>
+  </div>
+</div>
+
+
+<!--div class="col-md-6 tile-space">
+<div class="subscribe-tile">
+  <div class=header>
+    <span class=heading>Monthly</span> 
+  </div>
+  <div class=content>
+<span class=price>${{ monthly }}</span>
+<a class=button href="" ng-click="selectMonthly()">Select</a> 
+  </div>
+</div>
+</div>
+
+<div class="col-md-6 tile-space">
+<div class=subscribe-tile>
+  <div class=header>
+    
+    <span class=heading>Yearly</span>
+  </div>
+  <div class=content>
+<span class=price>${{ yearly }}</span>
+<a class="button element-space" href="" ng-click="selectYearly()">Select</a>
+  </div>
+</div>
+</div-->
+
+      <div class=row style="padding:45px;">
+        <div class="col-md-offset-4 col-md-4" stlye="padding-bottom: 30px;">
+          <div class="tile brand-blue-tile">
+            <div class="brand-blue-tile-header">
+              <span class="heading">
+              Total
+              </span>
+            </div>
+          <div class=copy>
+            <span class="finalise-price">${{ total }}</span>
+          </div>
+        </div>
+      </div>
+
+<!--div> 
+<h1>Register with Waabu</h1>
+Email: <input ng-model="email" type="email" /><br/>
+Password: <input ng-model="password" type="password" /><br/>
+Confirm Password: <input ng-model="passwordconf" type="password" /><br/><br/>
+<button ng-click="register()">Register</button>
+<p>Already registered? Log in</p>
+<p>Forgot your password?</p>
+</div>
+
+<div>
+<h1>Login</h1>
+Email: <input type="email" /><br/>
+Password: <input type="password" /><br/>
+<button ng-click="login()">Login</button>
+<p>{{ error || "" }}</p>
+</div-->
+
+<div ng-show=subscribed class=row>
+  <div class="col-md-offset-2 col-md-8 text-center">
+    <div class=row>
+  <div class=finalise-buttons>
+    <div class="col-md-4">
+      <a class="finalise-item-button light-red-button" href="" ng-click="cancelItem()">Cancel</a> 
+    </div>
+    <div class=col-md-4>
+      <a style="padding-top: 42px;" class="finalise-item-button light-blue-button" href="" ng-click="addCompleteItem()">Continue Shopping</a>
+    </div>
+    <div class=col-md-4>
+      <a class="finalise-item-button light-green-button" href="" ng-click="checkout()">Checkout</a> 
+    </div>
+    </div>
+  </div>
+
+
+  </div>
+</div>
+
+  </div>
+</div>
+
+</div>

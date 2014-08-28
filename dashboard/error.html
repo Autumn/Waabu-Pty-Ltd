@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<link type="text/css" rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,900italic,700italic,400italic,300,700,900,300italic,100italic,100"></link>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <title>
+      Login &mdash; Waabu Dashboard
+    </title>
+    <link rel="stylesheet" href="css/login.css" />
+<script src="js/jquery-1.11.0.min.js"></script>
+
+<script src="bootstrap/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container login">
+      <div class="row">
+        <div class="col-xs-8 col-xs-offset-2" style="">
+	  <div class="login">
+	    <span class=heading>Waabu Dashboard</span>
+	    <form class=login-form action="/login" method="post">
+	      <div class="row element-padding">
+	      <input class=input type="email" placeholder="Email" name="email" />
+	      </div>
+	      <div class="row element-padding">
+	      <input class=input type="password" placeholder="Password" name="password" />
+	      </div>
+	      <div class="row element-padding">
+	      <input class=button type="submit" value="Login">  
+	      </div>
+
+              <div class="row">
+                <div class="alert alert-danger tile-error">
+                  Login error. Please check your details and try again.
+                </div>
+              </div>
+              <div class="row">
+                <span class=copy>Don't have an account? Register now.</span>
+              </div>
+	    </form>
+	  </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

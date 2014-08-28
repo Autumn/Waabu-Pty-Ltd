@@ -1,0 +1,64 @@
+<div class=container>
+  <div class="row tile-padding">
+    <div class="tile brand-blue-tile">
+      <div class="brand-blue-tile-header"> 
+        <span class="heading">Change Password</span>
+      </div>
+      <div class="row text-center" style="padding:30px;">
+        <form name="changePwForm" novalidate autocomplete="off">
+        <div class="col-md-6 col-md-offset-3">
+          <div style="padding:15px;">
+        <input autofocus type="password" ng-model="oldpassword" ng-required=true ng-minlength=8 ng-maxlength=72 class="form-control form-input" name="oldpassword" placeholder="Confirm current password."></input>
+          </div>
+          <div style="padding:15px;">
+        <input type="password" ng-model="newpassword" ng-required=true ng-minlength=8 ng-maxlength=72 class="form-control form-input" name="newpassword" placeholder="Enter new password."></input>
+          </div>
+          <div style="padding:15px;">
+        <input type="password" ng-model="newpasswordconf" ng-required=true ng-minlength=8 ng-maxlength=72 class="form-control form-input" name="newpasswordconf" placeholder="Confirm new password."></input>
+          </div>
+          <div style="padding:15px;">
+        <a type="submit" class="large-circle-button light-green-button" href="" ng-click="changePassword()">Update</a>
+          </div>
+          <div ng-show="changePwError" style="padding:30px;">
+            <div class="alert alert-danger tile-error">{{ changePwErrorMsg }}</div>
+          </div>
+          <div ng-show="changePwSuccess" style="padding:30px;">
+            <div class="alert alert-success tile-success">Password changed successfully.</div>
+          </div>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row tile-padding">
+    <div class="tile brand-blue-tile">
+      <div class="brand-blue-tile-header"> 
+        <span class="heading">Terminate Service</span>
+      </div>
+      <div class="row text-center">
+        <span class="copy">Delete your account and terminate all subscriptions.</span>
+      </div>
+      <div ng-show="deleteStart" class="row text-center">
+        <div class="col-md-8 col-md-offset-2 tile-padding">
+           <span class="copy">This will delete your account, your Waab services and data, billing history, and everything else. Deletion is irreversible.</span>
+          <input class="form-control form-input" type="password" ng-model="password" placeholder="Please enter your password"></input>
+        </div>
+      </div>
+
+      <div class="row text-center">
+        <div class="col-md-6 col-md-offset-3 tile-padding">
+          <a class="large-circle-button red-button" ng-click="deleteAccount()">Delete</a>
+        </div>
+      </div>
+
+      <div ng-show="deleteFailure" class="row text-center">
+        <div class="col-md-6 col-md-offset-3 tile-padding">
+          <div class="alert alert-danger tile-error">Incorrect password.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

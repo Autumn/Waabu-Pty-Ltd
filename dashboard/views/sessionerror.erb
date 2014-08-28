@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<link type="text/css" rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,900italic,700italic,400italic,300,700,900,300italic,100italic,100"></link>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <title>
+      Oops &mdash; Session Ended.
+    </title>
+    <link rel="stylesheet" href="css/login.css" />
+<script src="js/jquery-1.11.0.min.js"></script>
+
+<script src="bootstrap/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container login">
+      <div class="row">
+        <div class="col-xs-6 col-xs-offset-3" style="">
+	  <div class="login">
+	    <span class=heading>Session unexpectedly ended.</span>
+            <span class=copy>Sorry! An error occured. Please log in again.</span>
+	  </div>
+        </div>
+      </div>
+    </div>
+
+<script>
+function redirect() {
+   window.location.href = "/";
+   return;
+}
+
+window.setInterval("redirect()", 2000);
+
+</script>
+
+  </body>
+</html>

@@ -1,0 +1,190 @@
+.corewaab-tiles {
+}
+
+.corewaab-tile {
+
+font-family: "Lato", "sans-serif";
+/*   background-color: #1ba1e2; */
+background-color: #f6fbfe; 
+/*border-top: 1px solid #81cdff;
+border-left: 1px solid #81cdff;
+border-right: 1px solid #81cdff;*/
+}
+
+.corewaab-tilealt {
+   border-top: 2px solid #dbe8f3;
+/*   background-color: #2D9EF2; */
+   padding: 25px;
+   margin-bottom: 25px;
+}
+.corewaab-tile .img {
+  display: block;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.corewaab-tile .title {
+  font-size: 24px;
+  padding: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.corewaab-tile .key {
+  padding: 5px;
+  font-size: 18px;
+  font-weight: lighter;
+  text-align: left;
+}
+
+.corewaab-tile .value {
+  padding: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: right;
+}
+
+.corewaab-tile .description {
+  display: block;
+  padding: 5px;
+  text-align: center;
+  font-variant: small-caps; 
+}
+
+.corewaab-tile .pricing {
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.corewaab-tile .monthly_price {
+  font-size: 48px;
+  color: #1d1d1d;
+}
+.corewaab-tile .price_month {
+  font-size: 24px;
+  color: #1d1d1d;
+}
+
+.corewaab-tile .yearly_price {
+  font-size: 16px;
+  color: #1d1d1d;
+}
+.corewaab-tile .yearly_price_month {
+  font-size: 8px;
+  color: #1d1d1d;
+}
+.corewaab-tile .buttons {
+  text-align:center;
+  padding: 15px;
+}
+
+.corewaab-tile .button {
+  display: inline-block;
+  width: 100px;
+  padding: 5px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+/*
+p {
+margin: 0;
+}
+p {
+display: block;
+-webkit-margin-before: 1em;
+-webkit-margin-after: 1em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+}
+p {
+font-family: "proxima-nova", sans-serif;
+font-weight: 400;
+color: #474747;
+-webkit-font-smoothing: antialiased;
+}
+p {
+margin: 0 0 10px;
+}
+
+.dropdown-menu {
+position: absolute;
+top: 100%;
+left: 0;
+z-index: 1000;
+display: none;
+float: left;
+min-width: 160px;
+padding: 5px 0;
+margin: 2px 0 0;
+list-style: none;
+font-size: 15px;
+background-color: #79B7E1;
+border: 1px solid rgba(0, 0, 0, 0);
+border-radius: 0;
+-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+background-clip: padding-box;
+}
+
+.dropdown-menu>li>a {
+display: block;
+clear: both;
+font-weight: 400;
+line-height: 1.42857143;
+color: #FFF;
+white-space: nowrap;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
+background-color: transparent;
+color: #555;
+}
+
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+text-decoration: none;
+color: #262626;
+background-color: #F5F5F5;
+}
+
+.packages_select {
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+-ms-border-radius: 4px;
+-o-border-radius: 4px;
+border-radius: 4px;
+display: -moz-inline-stack;
+display: inline-block;
+vertical-align: middle;
+zoom: 1;
+background-color: #EEE;
+color: #666;
+padding: 10px 0;
+width: 140px;
+text-align: center;
+margin: 0 10px 20px;
+line-height: 24px;
+cursor: pointer;
+}
+
+.package_select_alt {
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+-ms-border-radius: 4px;
+-o-border-radius: 4px;
+border-radius: 4px;
+display: -moz-inline-stack;
+display: inline-block;
+vertical-align: middle;
+zoom: 1;
+background-color: #398BCE;
+color: #666;
+padding: 10px 0;
+width: 140px;
+text-align: center;
+margin: 0 10px 20px;
+line-height: 24px;
+cursor: pointer:
+}
+*/

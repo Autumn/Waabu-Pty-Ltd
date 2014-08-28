@@ -1,0 +1,22 @@
+<div id="waabu-content" ng-controller="WaabCtrl">
+<div class=container>
+<div class="row text-center" style="padding:30px;">
+<span class="dashboard-heading">Waabs</span>
+</div>
+<div ng-show="vms.length == 0" class="row text-center">
+You do not have any Waabs! How about <a href="//waabu.com">purchasing one at our store?</a>
+</div>
+<corewaab-details ng-repeat="vm in vms track by $index" vm="vm"></corewaab-details>
+<!--div class=prod-view>
+<corewaab-details></corewaab-details>
+</div>
+<div class=prod-view>
+<corewaab-details></corewaab-details>
+</div>
+<div class=prod-view>
+<corewaab-details></corewaab-details>
+</div-->
+</div>
+</div>
+
+

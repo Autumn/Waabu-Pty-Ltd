@@ -1,0 +1,16 @@
+<div class=package-tile>
+	<span class=heading>{{ content.packageName }}</span>
+        <img class=img height=150px width=150px src="{{ content.icon }}"/>
+	<span class=description>{{ content.description }}</span>
+        <div class=buttons>
+        <div class=button-group>
+		<a class=button href="">More Info</a>
+                <a id="package-button" class=button href="" ng-click="selectPackage()">{{ buttonState }}</a>
+		<!-- label class="packages_selectalt" href="" ng-click="selectPackage()" ng-show="added">Remove</label> 
+		<label class="packages_select" href="" ng-click="selectPackage()" ng-show="notAdded">Select</label --> 
+                <!--label class=packages_select href="" ng-click="selectPackage()">{{ buttonState }}</label-->
+		
+
+        </div> 
+	</div>
+</div>

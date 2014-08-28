@@ -1,0 +1,2 @@
+echo NETWORKING=yes
+echo NETWORKING_IPV6=yes

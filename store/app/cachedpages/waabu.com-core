@@ -1,0 +1,899 @@
+<html lang="en" ng-app="myApp" class="ng-scope"><head><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide{display:none !important;}ng\:form{display:block;}.ng-animate-block-transitions{transition:0s all!important;-webkit-transition:0s all!important;}</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Cloud Server Hosting – SSD Cloud & Web Hosting | Waabu</title>
+  <meta name="description" content="Cloud Hosting by Waabu - Enjoy fast, simple and easy app &amp; cloud hosting, powered by our Waabs. Our powerful virtual servers are engineered to bring you hosting power to each person or business">
+  <meta name="keywords" content="cloud server, cloud hosting, web hosting, web hosting services, web hosting australia, best web host, web hosts, top web hosting, au web hosting, aussie web host, vps, vps server, vps server hosting, vps hosting, virtual server, virtual private server, ubuntu server, centos server, debian server, linux server, fedora server, linux mint server, web hosting, waabu, waabs, waabu cloud,">
+
+<link href="//fonts.googleapis.com/css?family=Lato:400,900italic,700italic,400italic,300,700,900,300italic,100italic,100" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/app.css">
+
+  <link rel="stylesheet" href="css/tiles.css">
+  <link rel="stylesheet" href="corewaab/css/style.css">
+  <link rel="stylesheet" href="webwaab/css/style.css">
+  <link rel="stylesheet" href="corewaab/config/css/style.css">
+
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<script async="" src="//www.google-analytics.com/analytics.js"></script><script src="js/jquery-1.11.0.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+
+</head>
+
+<body>
+   <div id="waabu-wrap">
+      <div id="waabu-header">
+         <waabu-menu><div ng-controller="MenuCtrl" class="ng-scope">
+  <div class="navbar navbar-default navbar-fixed-top" role="navigvation" style="">
+    <div class="container">
+      <div class="navbar-header">
+        <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="#/" class="brand">
+          <div>
+            <img src="img/logo-large.png" height="60px" width="60px">
+            <span class="title">Waabu</span>
+          </div>
+        </a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="500">Cloud Services</a>
+              <ul class="dropdown-menu" style="box-shadow: none; ">
+<!--              <li><a href="#/webWaab">WebWaab</a></li> -->
+            	<li><a href="#/coreWaab">Waabs</a></li>
+              </ul>
+            </li>
+            <li><a href="#/features">Features</a></li>
+              <!--li><a href="https://tutorials.waabu.com">Tutorials</a></li-->
+          </ul>
+	  <ul class="nav navbar-nav navbar-right">
+               <!--li><a href="" ng-click="toggleProgressWindow()">{{ waabuCart.configuringString() || ""}}</a></li>
+               <li id=waabu-progress-position></li>
+               <li><a href="" ng-click="toggleCartWindow()">Cart ({{ waabuCart.cart.length}})</a></li>
+               <li id=waabu-cart-position></li>
+               <li><a href="#">Dashboard</a></li>
+               <li><a href="" ng-click="toggleLoginWindow()">Login</a></li-->
+            <li class="dropdown">
+              <a href="" class="dropdown-toggle ng-binding" data-toggle="dropdown" data-hover="dropdown" data-delay="500">
+            Checkout <span class="glyphicon glyphicon-shopping-cart"></span> (8)</a>
+
+              <ul class="dropdown-menu" style="box-shadow: none; background-color: blue;">
+            	<!-- ngRepeat: item in waabuCart.cart track by $index --><li ng-repeat="item in waabuCart.cart track by $index" class="ng-scope ng-binding">CloudWaab <a href="" ng-click="deleteItem($index)" <span="" class="glyphicon glyphicon-remove"></a></li><!-- end ngRepeat: item in waabuCart.cart track by $index --><li ng-repeat="item in waabuCart.cart track by $index" class="ng-scope ng-binding">CloudWaab <a href="" ng-click="deleteItem($index)" <span="" class="glyphicon glyphicon-remove"></a></li><!-- end ngRepeat: item in waabuCart.cart track by $index --><li ng-repeat="item in waabuCart.cart track by $index" class="ng-scope ng-binding">CloudWaab <a href="" ng-click="deleteItem($index)" <span="" class="glyphicon glyphicon-remove"></a></li><!-- end ngRepeat: item in waabuCart.cart track by $index --><li ng-repeat="item in waabuCart.cart track by $index" class="ng-scope ng-binding">CloudWaab <a href="" ng-click="deleteItem($index)" <span="" class="glyphicon glyphicon-remove"></a></li><!-- end ngRepeat: item in waabuCart.cart track by $index --><li ng-repeat="item in waabuCart.cart track by $index" class="ng-scope ng-binding">CloudWaab <a href="" ng-click="deleteItem($index)" <span="" class="glyphicon glyphicon-remove"></a></li><!-- end ngRepeat: item in waabuCart.cart track by $index --><li ng-repeat="item in waabuCart.cart track by $index" class="ng-scope ng-binding">CloudWaab <a href="" ng-click="deleteItem($index)" <span="" class="glyphicon glyphicon-remove"></a></li><!-- end ngRepeat: item in waabuCart.cart track by $index --><li ng-repeat="item in waabuCart.cart track by $index" class="ng-scope ng-binding">PowerWaab <a href="" ng-click="deleteItem($index)" <span="" class="glyphicon glyphicon-remove"></a></li><!-- end ngRepeat: item in waabuCart.cart track by $index --><li ng-repeat="item in waabuCart.cart track by $index" class="ng-scope ng-binding">CoreWaab <a href="" ng-click="deleteItem($index)" <span="" class="glyphicon glyphicon-remove"></a></li><!-- end ngRepeat: item in waabuCart.cart track by $index -->
+                <li ng-show="waabuCart.cart.length == 0" class="ng-hide">No items.</li>
+                <li ng-show="waabuCart.cart.length > 0" style="border-top: 1px solid whitesmoke;" class=""><a href="" ng-click="sendToCheckout()">Checkout</a></li>
+              </ul>
+            </li>
+
+            <!--li><a href=""><span class="glyphicon glyphicon-shopping-cart"></span> ({{ waabuCart.cart.length }})</a></li-->
+ 
+            <li><a href="#/comingsoon">Dashboard</a></li>
+            <li><a href="#/register">Signup</a></li>
+               <!-- li><button type="button" class="btn btn-default" href="https://dashboard.waabu.com">Dashboard</button></li-->
+          </ul>
+        </div><!--/.nav-header -->
+      </div>
+    </div>
+    <waabu-menu-progress><div id="waabu-progress">
+<p class="ng-binding">{"name":"CoreWaab","os":3,"sshkey":"","upgrades":[],"subscription":""}</p>
+<p>show steps with ticks/crosses to indicate progress</p>
+<p>provide links to jump to any step</p>
+</div>
+
+</waabu-menu-progress>
+    <waabu-menu-cart><div id="waabu-cart">
+   <!-- ngRepeat: item in cart --><p ng-repeat="item in cart" class="ng-scope ng-binding">{"name":"CloudWaab","os":"ubuntu-13.10-32","sshkey":"","upgrades":[{"type":"cpu"},{"type":"hdd"}],"subscription":"monthly"}</p><!-- end ngRepeat: item in cart --><p ng-repeat="item in cart" class="ng-scope ng-binding">{"name":"CloudWaab","os":"ubuntu-13.10-64","sshkey":"","upgrades":[{"type":"cpu"},{"type":"hdd"}],"subscription":"monthly"}</p><!-- end ngRepeat: item in cart --><p ng-repeat="item in cart" class="ng-scope ng-binding">{"name":"CloudWaab","os":"centos-5.10-64","sshkey":"","upgrades":[{"type":"cpu"},{"type":"hdd"}],"subscription":"monthly"}</p><!-- end ngRepeat: item in cart --><p ng-repeat="item in cart" class="ng-scope ng-binding">{"name":"CloudWaab","os":"arch-2014-64","sshkey":"","upgrades":[{"type":"cpu"},{"type":"hdd"}],"subscription":"monthly"}</p><!-- end ngRepeat: item in cart --><p ng-repeat="item in cart" class="ng-scope ng-binding">{"name":"CloudWaab","os":"debian-7.4-32","sshkey":"","upgrades":[{"type":"cpu"},{"type":"hdd"}],"subscription":"monthly"}</p><!-- end ngRepeat: item in cart --><p ng-repeat="item in cart" class="ng-scope ng-binding">{"name":"CloudWaab","os":"debian-7.4-64","sshkey":"","upgrades":[{"type":"cpu"},{"type":"hdd"}],"subscription":"monthly"}</p><!-- end ngRepeat: item in cart --><p ng-repeat="item in cart" class="ng-scope ng-binding">{"name":"PowerWaab","os":"ubuntu-14.04-32","sshkey":"","upgrades":[{"type":"hdd"}],"subscription":"monthly"}</p><!-- end ngRepeat: item in cart --><p ng-repeat="item in cart" class="ng-scope ng-binding">{"name":"CoreWaab","os":"debian-7.4-64","sshkey":"","upgrades":[{"type":"hdd"}],"subscription":"monthly"}</p><!-- end ngRepeat: item in cart -->
+</div>
+
+</waabu-menu-cart>
+    <waabu-menu-login><div id="waabu-login"> 
+	        <div>
+            <form class="ng-pristine ng-valid">
+        <div id="loginModal" class="modal show" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×/button>
+                        <h1 class="text-center">Waabu Login</h1>
+                    </div>
+            <div class="modal-body">
+                
+                    <div class="form-group">
+                        <input type="text" class="form-control input-lg" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control input-lg" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary btn-lg btn-block">Sign In</button>
+                        <span class="pull-right"><a href="#">Register</a></span><span><a href="#">Need help?</a></span>
+                    </div>
+                
+            </div>
+                <div class="modal-footer">
+                    <div class="col-md-12">
+                        <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+                    </div>    
+                </div>
+            </div>
+            </div>
+        </div></form>
+        
+    </div>
+</div>
+</waabu-menu-login>
+
+    <script src="/js/dropdown.min.js"></script>
+  </div>
+
+</waabu-menu>
+      </div>
+      <div id="waabu-main" style="height:100%;">
+         <!-- ngView:  --><div ng-view="" autoscroll="false" class="reveal-animation ng-scope"><div id="waabu-content" ng-controller="CoreWaabCtrl" class="ng-scope">
+  <div class="marketing-block light-blue-block">
+    <div class="container product-header">
+      <div class="row">
+        <div class="col-md-12 product-copy">
+          <p><span class="product-heading dark-blue-text">Waab Cloud Hosting</span></p>
+          <p><span class="product-flavour dark-blue-text">Waabs offer ultimate control, power and performace. Develop, engineer, and create everything you imagine on a Waab of your own.</span></p>
+
+        </div>
+      <!--div class="col-lg-3 hidden-md hidden-xs product-image">
+  <img src="img/png_settings.png/" alt="Waabs" height=200px width=200px >
+	<img class="thumbnail img-responsive" height=250px width=250px src="/img/png_cloud.png"></a>
+      </div-->
+      </div>
+
+      <div ng-controller="CoreWaabSelectCtrl" class="ng-scope">
+        <div class="container" style="">
+	  <div class="row corewaab-tiles">
+	    <div class="col-md-2 col-md-offset-1" style="">
+	      <waabu-service-box content="serviceOne" class="ng-isolate-scope">
+
+
+<!--div class="corewaab-tile">
+  <div id=header>
+    <div class=row>
+      <div class="col-xs-12 col-md-12 title">
+	{{ title }}
+      </div>
+    </div>
+  </div>
+  <div class=row>
+    <div class="col-xs-6 col-md-6 value">
+      <span>RAM</span>
+    </div>
+    <div class="col-xs-6 col-md-6 key">
+      <span>{{ram }}MB</span>
+    </div>
+  </div>
+  <div class=row>
+    <div class="col-xs-6 col-md-6 value">
+      <span>CPU{{ cpu_plural }}</span>
+    </div>
+    <div class="col-xs-6 col-md-6 key">
+      <span>{{ cpu}}</span>
+    </div>
+  </div>
+  <div class=row>
+    <div class="col-xs-6 col-md-6 value">
+      <span>HDD</span>
+    </div>
+    <div class="col-xs-6 col-md-6 key">
+      <span>{{ storage}}GB</span>
+    </div>
+  </div>
+  <div class=row>
+    <div class="col-xs-12 col-md-12 pricing">
+      <span class=monthly_price>${{ monthlyPrice }}<span class=price_month>/mo</span></span>
+    </div>
+  </div>
+  <div class=row>
+    <div class="col-xs-12 col-md-12 pricing">
+      <span class=yearly_price>${{ yearlyPrice }}<span class=yearly_price_month>/mo</span> paid yearly</span>
+    </div>
+  </div>
+
+  <div id=buttons class="buttons">
+    <a href="" class="button" id="button" ng-click="selectService()">Select</a>
+  </div>
+</div-->
+            <div class="landing-tile purple">
+	      <div class="purple-header">
+                <div class="row">
+                  <div class="col-xs-12 col-md-12 heading ng-binding">
+                    BaseWaab
+		  </div>
+		</div>
+	      </div>
+	      <div class="row">
+                <div class="col-xs-6 col-md-6 value ng-binding">
+                    512
+		</div>
+		<div class="col-xs-6 col-md-6 key">
+                    RAM 
+		</div>
+	      </div>
+	      <div class="row">
+                <div class="col-xs-6 col-md-6 value ng-binding">
+                  2
+		</div>
+		<div class="col-xs-6 col-md-6 key">
+                    CPU 
+		</div>
+	      </div>
+	      <div class="row">
+                <div class="col-xs-6 col-md-6 value ng-binding">
+                    10GB
+		</div>
+		<div class="col-xs-6 col-md-6 key">
+                    SSD
+		</div>
+	      </div>
+
+	      <div class="row">
+                <div class="col-xs-12 col-md-12 pricing">
+                  <span class="monthly-price ng-binding">$12<span class="price-subscript">/mo</span></span>
+		</div>
+	      </div>
+	      <div class="row">
+                <div class="col-xs-12 col-md-12 yearly-pricing">
+
+                  <span class="yearly-price ng-binding">or $9<span class="yearly-price-subscript">/mo</span> paid yearly</span>
+		</div>
+	      </div>
+	      <div class="row">
+                <div class="col-md-12 buttons">
+                  <a class="button purple-button" href="" ng-click="selectService()">Buy</a>
+		</div>
+	      </div>
+	    </div> 
+
+</waabu-service-box>
+            </div>
+	    <div class="col-md-2" style="">
+	      <waabu-service-box content="serviceTwo" class="ng-isolate-scope">
+
+
+<!--div class="corewaab-tile">
+  <div id=header>
+    <div class=row>
+      <div class="col-xs-12 col-md-12 title">
+	{{ title }}
+      </div>
+    </div>
+  </div>
+  <div class=row>
+    <div class="col-xs-6 col-md-6 value">
+      <span>RAM</span>
+    </div>
+    <div class="col-xs-6 col-md-6 key">
+      <span>{{ram }}MB</span>
+    </div>
+  </div>
+  <div class=row>
+    <div class="col-xs-6 col-md-6 value">
+      <span>CPU{{ cpu_plural }}</span>
+    </div>
+    <div class="col-xs-6 col-md-6 key">
+      <span>{{ cpu}}</span>
+    </div>
+  </div>
+  <div class=row>
+    <div class="col-xs-6 col-md-6 value">
+      <span>HDD</span>
+    </div>
+    <div class="col-xs-6 col-md-6 key">
+      <span>{{ storage}}GB</span>
+    </div>
+  </div>
+  <div class=row>
+    <div class="col-xs-12 col-md-12 pricing">
+      <span class=monthly_price>${{ monthlyPrice }}<span class=price_month>/mo</span></span>
+    </div>
+  </div>
+  <div class=row>
+    <div class="col-xs-12 col-md-12 pricing">
+      <span class=yearly_price>${{ yearlyPrice }}<span class=yearly_price_month>/mo</span> paid yearly</span>
+    </div>
+  </div>
+
+  <div id=buttons class="buttons">
+    <a href="" class="button" id="button" ng-click="selectService()">Select</a>
+  </div>
+</div-->
+            <div class="landing-tile cyan">
+	      <div class="cyan-header">
+                <div class="row">
+                  <div class="col-xs-12 col-md-12 heading ng-binding">
+                    CoreWaab
+		  </div>
+		</div>
+	      </div>
+	      <div class="row">
+                <div class="col-xs-6 col-md-6 value ng-binding">
+                    1024
+		</div>
+		<div class="col-xs-6 col-md-6 key">
+                    RAM 
+		</div>
+	      </div>
+	      <div class="row">
+                <div class="col-xs-6 col-md-6 value ng-binding">
+                  2
+		</div>
+		<div class="col-xs-6 col-md-6 key">
+                    CPU 
+		</div>
+	      </div>
+	      <div class="row">
+                <div class="col-xs-6 col-md-6 value ng-binding">
+                    20GB
+		</div>
+		<div class="col-xs-6 col-md-6 key">
+                    SSD
+		</div>
+	      </div>
+
+	      <div class="row">
+                <div class="col-xs-12 col-md-12 pricing">
+                  <span class="monthly-price ng-binding">$23<span class="price-subscript">/mo</span></span>
+		</div>
+	      </div>
+	      <div class="row">
+                <div class="col-xs-12 col-md-12 yearly-pricing">
+
+                  <span class="yearly-price ng-binding">or $18<span class="yearly-price-subscript">/mo</span> paid yearly</span>
+		</div>
+	      </div>
+	      <div class="row">
+                <div class="col-md-12 buttons">
+                  <a class="button cyan-button" href="" ng-click="selectService()">Buy</a>
+		</div>
+	      </div>
+	    </div> 
+
+</waabu-service-box>
+	    </div>
+	    <div class="col-md-2" style="">
+	      <waabu-service-box content="serviceThree" class="ng-isolate-scope">
+
+
+<!--div class="corewaab-tile">
+  <div id=header>
+    <div class=row>
+      <div class="col-xs-12 col-md-12 title">
+	{{ title }}
+      </div>
+    </div>
+  </div>
+  <div class=row>
+    <div class="col-xs-6 col-md-6 value">
+      <span>RAM</span>
+    </div>
+    <div class="col-xs-6 col-md-6 key">
+      <span>{{ram }}MB</span>
+    </div>
+  </div>
+  <div class=row>
+    <div class="col-xs-6 col-md-6 value">
+      <span>CPU{{ cpu_plural }}</span>
+    </div>
+    <div class="col-xs-6 col-md-6 key">
+      <span>{{ cpu}}</span>
+    </div>
+  </div>
+  <div class=row>
+    <div class="col-xs-6 col-md-6 value">
+      <span>HDD</span>
+    </div>
+    <div class="col-xs-6 col-md-6 key">
+      <span>{{ storage}}GB</span>
+    </div>
+  </div>
+  <div class=row>
+    <div class="col-xs-12 col-md-12 pricing">
+      <span class=monthly_price>${{ monthlyPrice }}<span class=price_month>/mo</span></span>
+    </div>
+  </div>
+  <div class=row>
+    <div class="col-xs-12 col-md-12 pricing">
+      <span class=yearly_price>${{ yearlyPrice }}<span class=yearly_price_month>/mo</span> paid yearly</span>
+    </div>
+  </div>
+
+  <div id=buttons class="buttons">
+    <a href="" class="button" id="button" ng-click="selectService()">Select</a>
+  </div>
+</div-->
+            <div class="landing-tile pink-tile">
+	      <div class="pink-tile-header">
+                <div class="row">
+                  <div class="col-xs-12 col-md-12 heading ng-binding">
+                    DevWaab
+		  </div>
+		</div>
+	      </div>
+	      <div class="row">
+                <div class="col-xs-6 col-md-6 value ng-binding">
+                    2048
+		</div>
+		<div class="col-xs-6 col-md-6 key">
+                    RAM 
+		</div>
+	      </div>
+	      <div class="row">
+                <div class="col-xs-6 col-md-6 value ng-binding">
+                  2
+		</div>
+		<div class="col-xs-6 col-md-6 key">
+                    CPU 
+		</div>
+	      </div>
+	      <div class="row">
+                <div class="col-xs-6 col-md-6 value ng-binding">
+                    30GB
+		</div>
+		<div class="col-xs-6 col-md-6 key">
+                    SSD
+		</div>
+	      </div>
+
+	      <div class="row">
+                <div class="col-xs-12 col-md-12 pricing">
+                  <span class="monthly-price ng-binding">$38<span class="price-subscript">/mo</span></span>
+		</div>
+	      </div>
+	      <div class="row">
+                <div class="col-xs-12 col-md-12 yearly-pricing">
+
+                  <span class="yearly-price ng-binding">or $35<span class="yearly-price-subscript">/mo</span> paid yearly</span>
+		</div>
+	      </div>
+	      <div class="row">
+                <div class="col-md-12 buttons">
+                  <a class="button pink-button" href="" ng-click="selectService()">Buy</a>
+		</div>
+	      </div>
+	    </div> 
+
+</waabu-service-box>
+    	    </div>
+	    <div class="col-md-2" style="">
+	      <waabu-service-box content="serviceFour" class="ng-isolate-scope">
+
+
+<!--div class="corewaab-tile">
+  <div id=header>
+    <div class=row>
+      <div class="col-xs-12 col-md-12 title">
+	{{ title }}
+      </div>
+    </div>
+  </div>
+  <div class=row>
+    <div class="col-xs-6 col-md-6 value">
+      <span>RAM</span>
+    </div>
+    <div class="col-xs-6 col-md-6 key">
+      <span>{{ram }}MB</span>
+    </div>
+  </div>
+  <div class=row>
+    <div class="col-xs-6 col-md-6 value">
+      <span>CPU{{ cpu_plural }}</span>
+    </div>
+    <div class="col-xs-6 col-md-6 key">
+      <span>{{ cpu}}</span>
+    </div>
+  </div>
+  <div class=row>
+    <div class="col-xs-6 col-md-6 value">
+      <span>HDD</span>
+    </div>
+    <div class="col-xs-6 col-md-6 key">
+      <span>{{ storage}}GB</span>
+    </div>
+  </div>
+  <div class=row>
+    <div class="col-xs-12 col-md-12 pricing">
+      <span class=monthly_price>${{ monthlyPrice }}<span class=price_month>/mo</span></span>
+    </div>
+  </div>
+  <div class=row>
+    <div class="col-xs-12 col-md-12 pricing">
+      <span class=yearly_price>${{ yearlyPrice }}<span class=yearly_price_month>/mo</span> paid yearly</span>
+    </div>
+  </div>
+
+  <div id=buttons class="buttons">
+    <a href="" class="button" id="button" ng-click="selectService()">Select</a>
+  </div>
+</div-->
+            <div class="landing-tile purple">
+	      <div class="purple-header">
+                <div class="row">
+                  <div class="col-xs-12 col-md-12 heading ng-binding">
+                    CloudWaab
+		  </div>
+		</div>
+	      </div>
+	      <div class="row">
+                <div class="col-xs-6 col-md-6 value ng-binding">
+                    4096
+		</div>
+		<div class="col-xs-6 col-md-6 key">
+                    RAM 
+		</div>
+	      </div>
+	      <div class="row">
+                <div class="col-xs-6 col-md-6 value ng-binding">
+                  4
+		</div>
+		<div class="col-xs-6 col-md-6 key">
+                    CPU 
+		</div>
+	      </div>
+	      <div class="row">
+                <div class="col-xs-6 col-md-6 value ng-binding">
+                    30GB
+		</div>
+		<div class="col-xs-6 col-md-6 key">
+                    SSD
+		</div>
+	      </div>
+
+	      <div class="row">
+                <div class="col-xs-12 col-md-12 pricing">
+                  <span class="monthly-price ng-binding">$65<span class="price-subscript">/mo</span></span>
+		</div>
+	      </div>
+	      <div class="row">
+                <div class="col-xs-12 col-md-12 yearly-pricing">
+
+                  <span class="yearly-price ng-binding">or $60<span class="yearly-price-subscript">/mo</span> paid yearly</span>
+		</div>
+	      </div>
+	      <div class="row">
+                <div class="col-md-12 buttons">
+                  <a class="button purple-button" href="" ng-click="selectService()">Buy</a>
+		</div>
+	      </div>
+	    </div> 
+
+</waabu-service-box>
+  	    </div>
+	    <div class="col-md-2" style="">
+	      <waabu-service-box content="serviceFive" class="ng-isolate-scope">
+
+
+<!--div class="corewaab-tile">
+  <div id=header>
+    <div class=row>
+      <div class="col-xs-12 col-md-12 title">
+	{{ title }}
+      </div>
+    </div>
+  </div>
+  <div class=row>
+    <div class="col-xs-6 col-md-6 value">
+      <span>RAM</span>
+    </div>
+    <div class="col-xs-6 col-md-6 key">
+      <span>{{ram }}MB</span>
+    </div>
+  </div>
+  <div class=row>
+    <div class="col-xs-6 col-md-6 value">
+      <span>CPU{{ cpu_plural }}</span>
+    </div>
+    <div class="col-xs-6 col-md-6 key">
+      <span>{{ cpu}}</span>
+    </div>
+  </div>
+  <div class=row>
+    <div class="col-xs-6 col-md-6 value">
+      <span>HDD</span>
+    </div>
+    <div class="col-xs-6 col-md-6 key">
+      <span>{{ storage}}GB</span>
+    </div>
+  </div>
+  <div class=row>
+    <div class="col-xs-12 col-md-12 pricing">
+      <span class=monthly_price>${{ monthlyPrice }}<span class=price_month>/mo</span></span>
+    </div>
+  </div>
+  <div class=row>
+    <div class="col-xs-12 col-md-12 pricing">
+      <span class=yearly_price>${{ yearlyPrice }}<span class=yearly_price_month>/mo</span> paid yearly</span>
+    </div>
+  </div>
+
+  <div id=buttons class="buttons">
+    <a href="" class="button" id="button" ng-click="selectService()">Select</a>
+  </div>
+</div-->
+            <div class="landing-tile red-tile">
+	      <div class="red-tile-header">
+                <div class="row">
+                  <div class="col-xs-12 col-md-12 heading ng-binding">
+                    PowerWaab
+		  </div>
+		</div>
+	      </div>
+	      <div class="row">
+                <div class="col-xs-6 col-md-6 value ng-binding">
+                    8192
+		</div>
+		<div class="col-xs-6 col-md-6 key">
+                    RAM 
+		</div>
+	      </div>
+	      <div class="row">
+                <div class="col-xs-6 col-md-6 value ng-binding">
+                  8
+		</div>
+		<div class="col-xs-6 col-md-6 key">
+                    CPU 
+		</div>
+	      </div>
+	      <div class="row">
+                <div class="col-xs-6 col-md-6 value ng-binding">
+                    80GB
+		</div>
+		<div class="col-xs-6 col-md-6 key">
+                    SSD
+		</div>
+	      </div>
+
+	      <div class="row">
+                <div class="col-xs-12 col-md-12 pricing">
+                  <span class="monthly-price ng-binding">$145<span class="price-subscript">/mo</span></span>
+		</div>
+	      </div>
+	      <div class="row">
+                <div class="col-xs-12 col-md-12 yearly-pricing">
+
+                  <span class="yearly-price ng-binding">or $130<span class="yearly-price-subscript">/mo</span> paid yearly</span>
+		</div>
+	      </div>
+	      <div class="row">
+                <div class="col-md-12 buttons">
+                  <a class="button red-button" href="" ng-click="selectService()">Buy</a>
+		</div>
+	      </div>
+	    </div> 
+
+</waabu-service-box>
+	    </div>
+	  </div>
+        </div>
+      </div>
+     </div>
+   </div>
+
+     <div class="marketing-block brand-blue-block">
+       <div class="container">
+  	  <div class="row">
+
+	  <div class="col-sm-12 col-md-6 marketing-mid-text">
+            The Waabu Cloud brings you the power and reliability of the net to your keyboard, touchscreen, or whatever device you're using. Our Waab Platform ensures your servers, apps and programs run at peak performance. Try it out, you won't be disapointed.
+	  </div>
+
+	  <div class="col-md-6 col-xs-12 marketing-big-text">
+	    Three clicks and you will be on the Waabu Cloud with a blazing fast Waab.
+	  </div>
+	</div>
+      </div>
+    </div>
+
+    <div class="marketing-block light-grey-block">
+    <div class="container">
+    <div class="row faq-heading" style="text-align: center;">
+      Questions?
+    </div>
+    <div class="row">
+
+	<div class="col-md-offset-1 col-md-5">
+	<span class="faq-q">How much bandwidth?</span>
+        <span class="faq-a">We currently offer 200GB monthly bandwidth on all Waab subscriptions.</span>
+	<!--p>Our services have 2 tiers of pricing, its either per month based pricing (1 month) or a 12 month term. With your commitment to us for a 12month period, we make sure you are rewarded.</p-->
+	</div>
+
+	<div class="col-md-5">
+	<span class="faq-q">What can I do on a Waab?</span>
+	<span class="faq-a">Everything! We provide you with root administrator access to each Waab. The only software that runs on a Waab is your software.</span>
+	</div>
+	
+    </div> <!--End of Row -->
+
+
+    <div class="row">
+	<div class="col-md-offset-1 col-md-5">
+	<span class="faq-q">How am I billed?</span>
+	<span class="faq-a">Waabs are priced at a monthly rate, per month or per year.</span>
+	</div>
+
+        <div class="col-md-5">
+        <span class="faq-q">Am I billed while my Waab is powered off?</span>
+        <span class="faq-a">Yes. Your CPU, RAM, storage and network resources are all reserved for you during your subscription.</span>
+        </div>
+
+
+      </div>
+
+    <div class="row">
+	<div class="col-md-offset-1 col-md-5">
+	<span class="faq-q">Which plan should I choose?</span>
+	<span class="faq-a">If you're unsure, start with our BaseWaab and work up from there.</span>
+	</div>
+	
+	<div class="col-md-5">
+	<span class="faq-q">How can I pay?</span>
+	<span class="faq-a">Waabu accepts PayPal, Visa, MasterCard, American Express and Bitcoin.</span>
+	</div>
+
+    </div>
+
+    </div> <!--End of Row -->
+
+
+
+	<!--div class="col-xs-4 col-xs-offset-4" style="padding: 60px;">
+	<a class="btn btn-action btn-lg btn-block" href="#">Get Started</a>
+	</div-->
+    </div>
+
+    <div id="waabu-footer"> 
+      <waabu-footer><!-- div style="background-color: #808080;" -->
+<div class="footer">
+
+  <div class="container">
+
+
+    <div class="row">
+
+      <div class="col-md-3">
+        <ul>
+        <li><span class="heading">Overview</span></li>
+	<li><a href="#/coreWaab">Plans &amp; Pricing</a></li>
+	<li><a href="#/features">Features</a></li>
+	<li><a href="#/comingsoon">Dashboard</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+	<ul>
+        <li><span class="heading">Community</span></li>
+	<li><a href="#/comingsoon">Tutorials</a></li>
+	</ul>
+      </div>
+
+      <div class="col-md-3">
+
+	<ul>
+        <li><span class="heading">Company</span></li>
+	<li><a href="#/company">About Us</a></li>
+	<li><a href="#/comingsoon">Blog</a></li>
+	<!--li><a href="#/contact">Contact</a></li-->
+	</ul>
+
+      </div>
+
+
+      <div class="col-md-3">
+	<ul>
+        <li><span class="heading">Connect</span></li>
+	<li><a href="#/comingsoon">Google+</a></li>
+	<li><a href="#/comingsoon">Facebook</a></li>
+	<li><a href="#/comingsoon">Twitter</a></li>
+	<li><a href="//linkedin.com/company/waabu">LinkedIn</a></li>
+	</ul>
+      </div>
+
+
+    </div>
+  </div>
+<div class="container">
+	<!--div id="footer-copyright" class="row"-->
+        <div class="row" style="padding:30px;">
+		
+	<div class="col-sm-2 col-sm-offset-3">
+	© 2014  Waabu Pty Ltd 
+	</div>
+
+	<div class="col-sm-2">
+	<a href="#/termsOfService">Terms of Service</a>
+	</div>
+
+	<div class="col-sm-2">
+	<a href="#/privacyPolicy">Privacy Policy</a>
+	</div>
+
+	</div>
+</div>
+
+</div>
+</waabu-footer>
+    </div>
+  </div>
+  
+
+</div>
+      </div>
+   </div>
+
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+<!--script src="js/jquery.js"></script-->
+<script src="//code.angularjs.org/1.2.7/angular-animate.js"></script>
+
+  <script src="js/countries.js"></script>
+  <script src="js/phonecodes.js"></script>
+  <script src="lib/angular/angular-route.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="menu/js/controllers.js"></script>
+  <script src="landing/js/controllers.js"></script>
+  <script src="corewaab/js/controllers.js"></script>
+  <script src="corewaab/packages/js/controllers.js"></script>
+  <script src="corewaab/config/js/controllers.js"></script>
+  <script src="corewaab/finalise/js/controllers.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/directives.js"></script>
+  <script src="menu/js/directives.js"></script>
+  <script src="landing/js/directives.js"></script>
+  <script src="corewaab/js/directives.js"></script>
+  <script src="corewaab/packages/js/directives.js"></script>
+  <script src="corewaab/config/js/directives.js"></script>
+  <script src="corewaab/finalise/js/directives.js"></script>
+  <script src="features/js/controllers.js"></script>
+  <script src="webwaab/js/directives.js"></script>
+  <script src="webwaab/js/controllers.js"></script>
+
+  <script src="domain/search/js/controllers.js"></script>
+  <script src="domain/search/js/directives.js"></script>
+
+  
+  <script src="js/owasp-password-strength-test.js"></script>
+
+<!--Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-50307400-1', 'waabu.com');
+  ga('send', 'pageview');
+
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 988775356;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script><iframe name="google_conversion_frame" title="Google conversion frame" width="300" height="13" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/988775356/?random=1399210398621&amp;cv=7&amp;fst=1399210398621&amp;num=1&amp;fmt=1&amp;guid=ON&amp;u_h=720&amp;u_w=1280&amp;u_ah=683&amp;u_aw=1280&amp;u_cd=24&amp;u_his=2&amp;u_tz=600&amp;u_java=true&amp;u_nplug=12&amp;u_nmime=53&amp;frm=0&amp;url=https%3A//www.waabu.com/" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no">&lt;img height="1" width="1" border="0" alt="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/988775356/?frame=0&amp;random=1399210398621&amp;cv=7&amp;fst=1399210398621&amp;num=1&amp;fmt=1&amp;guid=ON&amp;u_h=720&amp;u_w=1280&amp;u_ah=683&amp;u_aw=1280&amp;u_cd=24&amp;u_his=2&amp;u_tz=600&amp;u_java=true&amp;u_nplug=12&amp;u_nmime=53&amp;frm=0&amp;url=https%3A//www.waabu.com/" /&gt;</iframe>
+<noscript>
+&lt;div style="display:inline;"&gt;
+&lt;img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/988775356/?value=0&amp;amp;guid=ON&amp;amp;script=0"/&gt;
+&lt;/div&gt;
+</noscript>
+
+
+
+
+</body></html>

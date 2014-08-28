@@ -1,0 +1,32 @@
+<div class="marketing-block light-blue-block">
+<div class=container>
+  <div class=row>
+    <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+      <div class="tile brand-blue-tile">
+        <div class="header brand-blue-tile-header">
+          <div class=row>
+            <div class="col-md-12 heading">
+              SSH Key 
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <span class="copy">
+            SSH keys allow you access to your Waab without a password. If you have an RSA or ECDSA key, we'll preload it for you.
+          </span>
+        </div>
+          <form name="sshkeyForm">
+        <div class="content">
+          <textarea style="display:block; margin:auto; background-color: rgb(240, 255, 255);" cols=60 rows=15 type="text" ng-model="sshkey" ng-model-options="{updateOn:'blur'}" ssh-key-validator />
+        </div>
+        <div class="content"> 
+          <div class="alert alert-danger tile-error" ng-show="keyerror">Invalid SSH Key.</div>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
