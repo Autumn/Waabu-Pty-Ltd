@@ -1,1 +1,0 @@
-../../gem/lib/vm-query.rb
